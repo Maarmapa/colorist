@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Colorist — the tools change when your drawer does</title>
+<title>Colorist — the tools change when your kit does</title>
 <meta name="description" content="A colour workbench where the agent's tool list is a consequence of what you already own. Real inventory from a real art supply store in Santiago, Chile.">
 <style>
   :root {
@@ -95,18 +95,22 @@
   <header>
     <h1>Colorist</h1>
     <p>
-      The agent can reason about colour but has never seen one. This page can paint
-      <b>1,625 real tones</b> from a working art supply store in Santiago, Chile — but cannot reason.
-      What it also has, and no server does, is <b>your drawer</b>: the markers you already own.
-      When that covers what you want to paint, the tool that sells you things stops existing.
+      Ask a shop what you need for a palette and it says <b>&ldquo;buy these eight&rdquo;</b> —
+      because it knows its catalogue and nothing about you.
+      This page also knows <b>what you already own</b>, so it says
+      <b>&ldquo;you have five, you need three&rdquo;</b>. And when you own all eight,
+      it has nothing to sell you — literally: the tool that puts things in a cart
+      <b>stops existing</b> for the agent.<br><br>
+      Your kit lives in this tab and is never uploaded. That is why this needs WebMCP and not a
+      remote server: a server can answer badly from a cart tool, it cannot <b>not have</b> one.
     </p>
   </header>
 
   <div class="row">
-    <button class="primary" id="btn-demo">Load a sample drawer</button>
+    <button class="primary" id="btn-demo">Load a sample kit</button>
     <button id="btn-palette">Set a sample palette</button>
-    <button id="btn-clear">Empty the drawer</button>
-    <span class="stat">in your drawer: <b id="drawer-count">0</b></span>
+    <button id="btn-clear">Empty the kit</button>
+    <span class="stat">in your kit: <b id="kit-count">0</b></span>
     <span class="stat" id="stock-banner">checking stock…</span>
   </div>
 
@@ -120,7 +124,7 @@
 
   <h2>Why this needs WebMCP</h2>
   <p class="stat">
-    Your drawer lives in this tab and is never uploaded — check the network panel.
+    Your kit lives in this tab and is never uploaded — check the network panel.
     A remote server can answer badly from a cart tool. It cannot <b>not have</b> one,
     because it does not know what you own.
   </p>
@@ -134,7 +138,7 @@
     const { colorist } = window;
     const mc = document.modelContext ?? navigator.modelContext;
     // Se llama la MISMA tool que llamaría el agente, no una ruta paralela.
-    if (mc && navigator.modelContextTesting) await navigator.modelContextTesting.executeTool('load_demo_drawer', '{}');
+    if (mc && navigator.modelContextTesting) await navigator.modelContextTesting.executeTool('load_demo_kit', '{}');
     else window.dispatchEvent(new Event('colorist:demo'));
   });
   document.getElementById('btn-palette')?.addEventListener('click', () => window.colorist?.setTargets(paleta));

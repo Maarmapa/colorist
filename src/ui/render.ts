@@ -23,7 +23,7 @@ export interface EstadoUI {
 export function pintarTodo(e: EstadoUI): void {
   pintarObjetivos(e);
   pintarGrilla(e);
-  const n = $('#drawer-count');
+  const n = $('#kit-count');
   if (n) n.textContent = String(e.cajon.length);
 }
 
@@ -70,7 +70,7 @@ function pintarGrilla(e: EstadoUI) {
       trozos.push(
         `<div class="${cls}" role="listitem" tabindex="-1" data-k="${clave}" ` +
           `style="background:${t.hex};color:${readableInk(t.hex)}" ` +
-          `aria-label="${t.code}${t.name ? ' ' + t.name : ''}${mio ? ', in your drawer' : ''}">${t.code}</div>`,
+          `aria-label="${t.code}${t.name ? ' ' + t.name : ''}${mio ? ', in your kit' : ''}">${t.code}</div>`,
       );
     }
     trozos.push('</div></section>');

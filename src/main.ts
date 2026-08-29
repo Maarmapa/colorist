@@ -79,8 +79,8 @@ const TOOLS_SIEMPRE: ToolDef[] = [
     title: 'Read what is on screen',
     description:
       'Returns the current state of this workbench: the target colours the person is trying to paint, ' +
-      'what is already in their drawer, and which targets they cannot currently match. ' +
-      'Call this first — the drawer lives only in this browser tab and no server has it. ' + AVISO_DATOS,
+      'what is already in their kit, and which targets they cannot currently match. ' +
+      'Call this first — the kit lives only in this browser tab and no server has it. ' + AVISO_DATOS,
     inputSchema: { type: 'object', properties: {} },
     annotations: { readOnlyHint: true, untrustedContentHint: true },
     execute: safeExecute('get_workbench', async () => {
@@ -91,8 +91,8 @@ const TOOLS_SIEMPRE: ToolDef[] = [
         cards_loaded: cartas.length,
         tones_available: tonosComprables(cartas).length,
         note: cajon.length === 0
-          ? 'The drawer is empty. Ask the person what they already own, or call load_demo_drawer.'
-          : 'The drawer is private to this tab and was never uploaded anywhere.',
+          ? 'The kit is empty. Ask the person what they already own, or call load_demo_kit.'
+          : 'The kit is private to this tab and was never uploaded anywhere.',
       });
     }),
   },
@@ -136,7 +136,7 @@ const TOOLS_SIEMPRE: ToolDef[] = [
     description:
       'For each target colour: the closest tone the person ALREADY OWNS and how far off it is (CIEDE2000), ' +
       'and whether anything purchasable would do better. Computed entirely in this page against their private ' +
-      'drawer — no server sees this. Distances under 2 are imperceptible.',
+      'kit — no server sees this. Distances under 2 are imperceptible.',
     inputSchema: { type: 'object', properties: {} },
     annotations: { readOnlyHint: true, untrustedContentHint: true },
     execute: safeExecute('analyze_gaps', async () => {
@@ -156,7 +156,7 @@ const TOOLS_SIEMPRE: ToolDef[] = [
         worst_case_delta_e: Math.round(peor * 10) / 10,
         verdict: peor <= 2
           ? 'Everything on the list is already covered by what they own.'
-          : `The hardest target is ${Math.round(peor * 10) / 10} away from anything in the drawer.`,
+          : `The hardest target is ${Math.round(peor * 10) / 10} away from anything in the kit.`,
       });
     }),
   },
@@ -321,23 +321,23 @@ const TOOLS_SIEMPRE: ToolDef[] = [
     }),
   },
   {
-    name: 'load_demo_drawer',
-    title: 'Load a sample drawer',
+    name: 'load_demo_kit',
+    title: 'Load a sample kit',
     description:
-      'Fills the drawer with a realistic starter set of Copic Sketch markers, so the gap analysis has something ' +
+      'Fills the kit with a realistic starter set of Copic Sketch markers, so the gap analysis has something ' +
       'to work against without the person typing 36 codes. Only for trying the workbench out.',
     inputSchema: { type: 'object', properties: {} },
     annotations: { readOnlyHint: false, untrustedContentHint: false },
-    execute: safeExecute('load_demo_drawer', async () => {
+    execute: safeExecute('load_demo_kit', async () => {
       const carta = cartas.find((c) => c.card_id === 'copic-sketch');
       if (!carta) return fail('no_card', 'The Copic Sketch card is not loaded.');
       const muestra = carta.tones.filter((t) => t.hex).filter((_, i) => i % 9 === 0).slice(0, 36);
       const n = addMany(muestra.map((t) => ({ card: 'copic-sketch', code: t.code })));
-      return ok({ added: n, drawer_size: getDrawer().length });
+      return ok({ added: n, kit_size: getDrawer().length });
     }),
   },
   {
-    name: 'update_drawer',
+    name: 'update_kit',
     title: 'Add or remove what they own',
     description:
       'Records that the person owns (or no longer owns) specific tones. This changes what the workbench considers ' +
@@ -350,10 +350,10 @@ const TOOLS_SIEMPRE: ToolDef[] = [
       },
     },
     annotations: { readOnlyHint: false, untrustedContentHint: false },
-    execute: safeExecute('update_drawer', async (a: { add?: { card: string; code: string }[]; remove?: { card: string; code: string }[] }) => {
+    execute: safeExecute('update_kit', async (a: { add?: { card: string; code: string }[]; remove?: { card: string; code: string }[] }) => {
       const sumados = a?.add?.length ? addMany(a.add.map((x) => ({ card: x.card, code: x.code }))) : 0;
       const sacados = a?.remove?.length ? removeMany(a.remove) : 0;
-      return ok({ added: sumados, removed: sacados, drawer_size: getDrawer().length });
+      return ok({ added: sumados, removed: sacados, kit_size: getDrawer().length });
     }),
   },
 ];
@@ -372,7 +372,7 @@ const TOOLS_COMPRA: ToolDef[] = [
     description:
       'Prepares a cart with the markers the plan says are actually worth buying, and shows it on screen for the ' +
       'person to review. It does NOT pay and does NOT place an order — the person clicks. ' +
-      'This tool only exists while there is a real gap: once their drawer covers the targets, it is unregistered.',
+      'This tool only exists while there is a real gap: once their kit covers the targets, it is unregistered.',
     inputSchema: { type: 'object', properties: {} },
     annotations: { readOnlyHint: false, untrustedContentHint: false },
     execute: safeExecute('prepare_order', async () => {
@@ -411,7 +411,7 @@ async function sincronizarSuperficie(mc: NonNullable<ReturnType<typeof superfici
       ? 'no targets set yet — nothing to be missing'
       : !hayStockVivo()
         ? 'stock unverified — nothing can be offered as purchasable'
-        : 'no gap: their drawer already covers these targets');
+        : 'no gap: their kit already covers these targets');
 }
 
 type MC = NonNullable<Awaited<ReturnType<typeof asegurarSuperficie>>>;
