@@ -72,6 +72,22 @@
   .stat b { color: var(--ink); }
   .stat.live b, .stat.live { color: var(--accent); }
   .stat.snapshot { color: #ffb454; }
+
+  /* El panel que espera un ojo humano. */
+  .eye { position: fixed; inset: 0; background: rgba(8,9,11,.92); display: grid; place-items: center; z-index: 50; }
+  .eye-box { max-width: 760px; width: 92vw; text-align: center; }
+  .eye-q { font-size: 19px; margin: 0 0 18px; }
+  .eye-opts { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .eye-opt {
+    width: 210px; height: 210px; border-radius: 12px; border: 2px solid rgba(255,255,255,.18);
+    display: grid; align-content: center; gap: 5px; cursor: pointer; padding: 0;
+  }
+  .eye-opt:hover, .eye-opt:focus { border-color: #fff; outline: none; transform: scale(1.03); }
+  .eye-code { font: 600 22px/1 var(--mono); }
+  .eye-name { font-size: 12px; opacity: .85; }
+  .eye-de { font: 11px/1 var(--mono); opacity: .7; }
+  .eye-foot { color: var(--dim); font-size: 13px; margin-top: 18px; }
+  .eye-skip { margin-left: 10px; }
 </style>
 </head>
 <body>

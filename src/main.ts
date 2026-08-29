@@ -20,6 +20,8 @@ import { hexToLab } from './color/srgb-lab.ts';
 import { cargarCartas, tonosComprables, refrescarStock, hayStockVivo, type Carta } from './data/cards.ts';
 import { pintarTodo, pintarPanelTools } from './ui/render.ts';
 import { filtrarPorSuperficie, sinReemplazoHonesto, SUPERFICIES, type Superficie } from './color/substrate.ts';
+import { preguntarAlOjo, type Candidato } from './ui/ask-the-eye.ts';
+import { ciede2000 } from './color/ciede2000.ts';
 
 let cartas: Carta[] = [];
 let objetivos: string[] = [];
@@ -207,6 +209,81 @@ const TOOLS_SIEMPRE: ToolDef[] = [
           `${plan.recommended.length} marker(s) for ${plan.totalClp.toLocaleString('es-CL')} CLP take the worst target ` +
           `${desde} to ${plan.worstAfterRecommended}.` +
           (inutil && inutil.buys !== null ? ` The next one after that only buys ${inutil.buys} — tell them not to buy it.` : ''),
+      });
+    }),
+  },
+  {
+    name: 'ask_the_eye',
+    title: 'Let the person choose between look-alikes',
+    description:
+      'Shows two or three candidate tones full-size on screen and WAITS for the person to pick one. ' +
+      'Use it when the numbers call it a tie — differences under about 2 are not reliably distinguishable, and ' +
+      'at that point the measurement cannot decide but a human eye can. You cannot see colour; this is how you borrow theirs. ' +
+      'The call does not return until they choose, dismiss it, or 90 seconds pass.',
+    inputSchema: {
+      type: 'object',
+      properties: {
+        tones: {
+          type: 'array',
+          description: '2 or 3 candidates, as "card_id:CODE" — e.g. "copic-sketch:E00"',
+          items: { type: 'string' },
+        },
+        question: { type: 'string', description: 'What to ask, e.g. "Which reads warmer for skin shadow?"' },
+      },
+      required: ['tones'],
+    },
+    annotations: { readOnlyHint: false, untrustedContentHint: false },
+    execute: safeExecute('ask_the_eye', async (a: { tones?: string[]; question?: string }, options) => {
+      const refs = Array.isArray(a?.tones) ? a.tones.slice(0, 3) : [];
+      if (refs.length < 2) {
+        return fail('need_two', 'This needs at least two candidates to compare.',
+          'Pass 2 or 3 tones as "card_id:CODE". If you only have one candidate, you do not need a human eye — just say it.');
+      }
+
+      const candidatos: Candidato[] = [];
+      const noEncontrados: string[] = [];
+      for (const ref of refs) {
+        const [cardId, code] = String(ref).split(':');
+        const carta = cartas.find((c) => c.card_id === cardId);
+        const t = carta?.tones.find((x) => x.code.toUpperCase() === String(code ?? '').toUpperCase());
+        if (!carta || !t?.hex) { noEncontrados.push(ref); continue; }
+        candidatos.push({ card: carta.card_id, code: t.code, name: t.name, hex: t.hex, deltaE: 0 });
+      }
+      if (candidatos.length < 2) {
+        return fail('tones_not_found', `Could not resolve: ${noEncontrados.join(', ')}.`,
+          'Use ids exactly as they come from analyze_gaps or plan_purchase, in the form "card_id:CODE".');
+      }
+
+      // El ΔE que se muestra es contra el PRIMER objetivo de la paleta: sirve
+      // para que la persona vea que efectivamente están empatados, que es la
+      // razón por la que se le está preguntando a ella y no al número.
+      const ref0 = objetivos[0] ? hexToLab(objetivos[0]) : null;
+      if (ref0) {
+        for (const c of candidatos) {
+          const lab = hexToLab(c.hex);
+          if (lab) c.deltaE = Math.round(ciede2000(ref0, lab) * 10) / 10;
+        }
+      }
+
+      const eleccion = await preguntarAlOjo(
+        candidatos,
+        a?.question || 'The numbers call these a tie. Which one do you want?',
+        options?.signal,
+      );
+
+      if (!eleccion.picked) {
+        const porque = {
+          timeout: 'They did not answer within 90 seconds.',
+          dismissed: 'They closed the panel without choosing.',
+          cancelled: 'The call was cancelled before they answered.',
+        }[eleccion.reason];
+        return fail(`eye_${eleccion.reason}`, porque,
+          'Do not pick for them and do not claim they chose. Ask in the conversation instead, or move on.');
+      }
+
+      return ok({
+        picked: eleccion.picked,
+        note: 'A person looked at these on screen and chose. This is their judgement, not a computed result.',
       });
     }),
   },
