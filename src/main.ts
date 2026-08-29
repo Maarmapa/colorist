@@ -19,9 +19,12 @@ import { analizarFaltantes, planDeCompra, type Tone } from './color/gap.ts';
 import { hexToLab } from './color/srgb-lab.ts';
 import { cargarCartas, tonosComprables, refrescarStock, hayStockVivo, type Carta } from './data/cards.ts';
 import { pintarTodo, pintarPanelTools } from './ui/render.ts';
+import { filtrarPorSuperficie, sinReemplazoHonesto, SUPERFICIES, type Superficie } from './color/substrate.ts';
 
 let cartas: Carta[] = [];
 let objetivos: string[] = [];
+/** Sobre qué se va a pintar. null = no declarado, y entonces no se filtra nada. */
+let superficie: Superficie | null = null;
 
 /** El grupo que aparece y desaparece según el cajón. */
 let grupoCompra: GrupoDeTools | null = null;
@@ -42,13 +45,22 @@ function tonosDelCajon(): Tone[] {
   return out;
 }
 
+/**
+ * El catálogo que se puede considerar, ya filtrado por lo que físicamente
+ * sirve. Todo el resto del código pide los tonos por acá y no por
+ * `tonosComprables` directo, para que sea imposible saltarse el filtro.
+ */
+function catalogoUsable(): { usables: Tone[]; excluidos: { card: string; tones: number; reason: string }[] } {
+  return filtrarPorSuperficie(tonosComprables(cartas), cartas, superficie);
+}
+
 /** ¿Hay algún hueco real que justifique una compra? */
 function hayHueco(): boolean {
   if (objetivos.length === 0) return false;
   // Sin stock verificado no se puede afirmar que algo sea comprable, así que
   // tampoco corresponde ofrecer la herramienta de comprar.
   if (!hayStockVivo()) return false;
-  const plan = planDeCompra(objetivos, tonosDelCajon(), tonosComprables(cartas));
+  const plan = planDeCompra(objetivos, tonosDelCajon(), catalogoUsable().usables);
   return plan.recommended.length > 0;
 }
 
@@ -129,13 +141,16 @@ const TOOLS_SIEMPRE: ToolDef[] = [
       if (objetivos.length === 0) {
         return fail('no_targets', 'No target colours are set yet.', 'Call set_targets with the hex colours the person wants to paint.');
       }
-      const gaps = analizarFaltantes(objetivos, tonosDelCajon(), tonosComprables(cartas));
+      const { usables, excluidos } = catalogoUsable();
+      const gaps = analizarFaltantes(objetivos, tonosDelCajon(), usables);
       const peor = gaps.reduce((m, g) => Math.max(m, g.bestOwned?.deltaE ?? 100), 0);
       return ok({
         gaps,
         stock: hayStockVivo()
           ? { source: 'live', note: 'Availability was verified against the store just now.' }
           : { source: 'snapshot', note: 'Live stock is unreachable. Colour data is still exact, but do NOT claim any tone is available.' },
+        surface: superficie ?? 'not declared — no physical filter applied',
+        ...(excluidos.length ? { excluded_by_surface: excluidos } : {}),
         worst_case_delta_e: Math.round(peor * 10) / 10,
         verdict: peor <= 2
           ? 'Everything on the list is already covered by what they own.'
@@ -156,7 +171,15 @@ const TOOLS_SIEMPRE: ToolDef[] = [
       if (objetivos.length === 0) {
         return fail('no_targets', 'No target colours are set yet.', 'Call set_targets first.');
       }
-      const plan = planDeCompra(objetivos, tonosDelCajon(), tonosComprables(cartas));
+      const { usables, excluidos } = catalogoUsable();
+      // El rechazo honesto: si para esta superficie no queda ningún medio que
+      // sirva, la respuesta es que no hay — no el color más parecido sobre un
+      // material equivocado.
+      if (superficie && usables.length === 0) {
+        return fail('no_honest_match', sinReemplazoHonesto(excluidos, superficie),
+          'Tell the person plainly that this shop has nothing suitable for that surface. Do not offer the closest colour anyway.');
+      }
+      const plan = planDeCompra(objetivos, tonosDelCajon(), usables);
       repintar();
       if (plan.recommended.length === 0) {
         // Dos causas MUY distintas producen un plan vacío, y confundirlas sería
@@ -184,6 +207,39 @@ const TOOLS_SIEMPRE: ToolDef[] = [
           `${plan.recommended.length} marker(s) for ${plan.totalClp.toLocaleString('es-CL')} CLP take the worst target ` +
           `${desde} to ${plan.worstAfterRecommended}.` +
           (inutil && inutil.buys !== null ? ` The next one after that only buys ${inutil.buys} — tell them not to buy it.` : ''),
+      });
+    }),
+  },
+  {
+    name: 'set_surface',
+    title: 'Say what they are painting on',
+    description:
+      'Declares the physical surface — paper, wall, canvas, wood, metal, glass, plastic, fabric, leather. ' +
+      'This filters the catalogue by what actually works BEFORE any colour is compared: an alcohol marker is ' +
+      'never offered for a wall no matter how well the colour matches, because it is transparent and fades. ' +
+      'If the surface is not declared, no physical filter is applied and that is stated rather than assumed.',
+    inputSchema: {
+      type: 'object',
+      properties: { surface: { type: 'string', enum: [...SUPERFICIES], description: 'What the paint goes on' } },
+      required: ['surface'],
+    },
+    annotations: { readOnlyHint: false, untrustedContentHint: false },
+    execute: safeExecute('set_surface', async (a: { surface?: string }) => {
+      const s = String(a?.surface ?? '').toLowerCase() as Superficie;
+      if (!SUPERFICIES.includes(s)) {
+        return fail('unknown_surface', `"${a?.surface}" is not a surface this workbench knows.`,
+          `Use one of: ${SUPERFICIES.join(', ')}.`);
+      }
+      superficie = s;
+      const { usables, excluidos } = catalogoUsable();
+      repintar();
+      return ok({
+        surface: s,
+        usable_tones: usables.length,
+        excluded: excluidos,
+        note: excluidos.length
+          ? 'Those media were removed from consideration entirely — not ranked lower.'
+          : 'Everything in the catalogue is suitable for this surface.',
       });
     }),
   },
@@ -243,7 +299,7 @@ const TOOLS_COMPRA: ToolDef[] = [
     inputSchema: { type: 'object', properties: {} },
     annotations: { readOnlyHint: false, untrustedContentHint: false },
     execute: safeExecute('prepare_order', async () => {
-      const plan = planDeCompra(objetivos, tonosDelCajon(), tonosComprables(cartas));
+      const plan = planDeCompra(objetivos, tonosDelCajon(), catalogoUsable().usables);
       if (plan.recommended.length === 0) {
         return fail('nothing_worth_buying', 'The plan came back empty — nothing here improves what they already own.',
           'Tell the person they do not need to buy anything for these targets.');
