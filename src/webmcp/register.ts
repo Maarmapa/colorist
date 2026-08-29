@@ -76,14 +76,19 @@ export class GrupoDeTools {
     if (this.control) return;
     const control = new AbortController();
     this.control = control;
-    await Promise.all(
-      tools.map((t) =>
-        this.mc.registerTool(t, { signal: control.signal }).catch((e) => {
-          // Un registro que falla —nombre duplicado, permiso denegado por
-          // Permissions-Policy— no puede tumbar la página. Se pierde esa tool.
-          console.warn(`[colorist] no se pudo registrar "${t.name}":`, e);
-        }),
+    // Con reloj, por lo mismo que `conReloj`: un registro que no contesta no
+    // puede dejar colgado al que lo llamó. La tool igual queda registrada si
+    // el polyfill termina después.
+    await conReloj(
+      Promise.all(
+        tools.map((t) =>
+          this.mc.registerTool(t, { signal: control.signal }).catch((e) => {
+            console.warn(`[colorist] no se pudo registrar "${t.name}":`, e);
+          }),
+        ),
       ),
+      1500,
+      undefined as unknown as void[],
     );
   }
 
@@ -94,12 +99,36 @@ export class GrupoDeTools {
   }
 }
 
-/** Los nombres de las tools vivas ahora, para pintarlas en pantalla. */
+/**
+ * Espera una promesa AJENA con un reloj al lado.
+ *
+ * Esta función existe por haber tropezado tres veces con la misma piedra en
+ * producción: `registerTool` y `getTools` del polyfill a veces no resuelven
+ * nunca. Ni rechazan —eso lo agarra un try/catch— simplemente no terminan, y
+ * un `await` sobre eso deja la página muda para siempre. La app quedaba con
+ * las tools registradas, el catálogo respondiendo y los swatches pintados,
+ * mientras el panel decía "Loading…" indefinidamente.
+ *
+ * La regla, ya aprendida caro: **nunca esperes sin reloj una promesa que no
+ * escribiste vos.** Un try/catch te protege de que falle; no de que no
+ * conteste.
+ */
+export function conReloj<T>(promesa: Promise<T>, ms: number, siNoContesta: T): Promise<T> {
+  return Promise.race([
+    promesa.catch(() => siNoContesta),
+    new Promise<T>((r) => setTimeout(() => r(siNoContesta), ms)),
+  ]);
+}
+
+/**
+ * Los nombres de las tools vivas ahora, para pintarlas en pantalla.
+ *
+ * Se le pregunta al navegador en vez de llevar una lista propia: el punto del
+ * panel es mostrar la superficie REAL que ve el agente, y una lista paralela
+ * mentiría justo cuando más importa — en el momento en que una tool aparece o
+ * desaparece.
+ */
 export async function toolsVivas(mc: Superficie): Promise<string[]> {
-  try {
-    const t = await mc.getTools?.();
-    return Array.isArray(t) ? t.map((x) => x.name) : [];
-  } catch {
-    return [];
-  }
+  const t = await conReloj(Promise.resolve(mc.getTools?.()), 1200, undefined);
+  return Array.isArray(t) ? t.map((x) => x.name) : [];
 }
