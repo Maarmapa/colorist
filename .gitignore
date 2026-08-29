@@ -74,3 +74,4 @@ dist/
 npm-debug.log*
 coverage/
 .cache/
+.vercel

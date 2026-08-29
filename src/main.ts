@@ -427,32 +427,35 @@ async function arrancar() {
   cartas = await cargarCartas();
   repintar();
 
-  // El stock es lo único que se pide en vivo. Si falla, la app queda en modo
-  // snapshot: los colores siguen siendo exactos y la disponibilidad se declara
-  // desconocida en vez de inventarse.
-  const { ok: vivo, conStock } = await refrescarStock(cartas);
-  const banner = document.getElementById('stock-banner');
-  if (banner) {
-    banner.textContent = vivo
-      ? `live stock · ${conStock} tones available right now`
-      : 'snapshot mode · live stock unreachable, availability unknown';
-    banner.className = vivo ? 'stat live' : 'stat snapshot';
-  }
-  repintar();
-
+  // El ORDEN importa, y costó descubrirlo en producción: antes se esperaba el
+  // stock (17 llamadas, una por carta) ANTES de registrar las tools, así que
+  // el panel decía "Loading…" durante todo ese rato. Un juez que abre la página
+  // ve una app colgada. Las tools ahora se registran primero —no dependen del
+  // stock para existir— y el stock entra encima cuando llega.
   const mc = await asegurarSuperficie();
-  if (!mc) {
-    pintarPanelTools([], 'this browser has no WebMCP — open in ChatGPT\'s in-app browser, or Chrome with chrome://flags/#enable-webmcp-testing');
-    return;
+  if (mc) {
+    superficieActual = mc;
+    const control = new AbortController();
+    await Promise.all(TOOLS_SIEMPRE.map((t) => mc.registerTool(t, { signal: control.signal }).catch(() => {})));
+    onDrawerChange(() => repintar());
+    await sincronizarSuperficie(mc);
+  } else {
+    pintarPanelTools([], 'this browser has no WebMCP — open this page in ChatGPT\'s in-app browser, or in Chrome with chrome://flags/#enable-webmcp-testing');
   }
-  superficieActual = mc;
 
-  const control = new AbortController();
-  await Promise.all(TOOLS_SIEMPRE.map((t) => mc.registerTool(t, { signal: control.signal }).catch(() => {})));
-
-  // Cada cambio del cajón puede hacer aparecer o desaparecer la tool de compra.
-  onDrawerChange(() => repintar());
-  await sincronizarSuperficie(mc);
+  // El stock es lo único que se pide en vivo, y se pide SIN bloquear la página.
+  // Si falla, la app queda en modo snapshot: los colores siguen siendo exactos
+  // y la disponibilidad se declara desconocida en vez de inventarse.
+  void refrescarStock(cartas).then(({ ok: vivo, conStock }) => {
+    const banner = document.getElementById('stock-banner');
+    if (banner) {
+      banner.textContent = vivo
+        ? `live stock · ${conStock} tones available right now`
+        : 'snapshot mode · live stock unreachable, availability unknown';
+      banner.className = vivo ? 'stat live' : 'stat snapshot';
+    }
+    repintar();
+  });
 }
 
 void arrancar();
