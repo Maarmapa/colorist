@@ -82,45 +82,55 @@ export function hayStockVivo(): boolean {
 }
 
 /**
- * Trae el stock por carta desde el cortafuegos same-origin.
+ * Trae el stock por carta a través del cortafuegos same-origin.
  *
- * Una llamada por carta, nunca una por tono. Si falla, no se reintenta en
- * bucle ni se rompe nada: la app queda en modo snapshot y el banner lo dice.
+ * En PARALELO, y esto no es micro-optimización: en serie tardaba más de 80
+ * segundos en producción —17 saltos encadenados de serverless a la tienda— y
+ * la página se quedaba diciendo "checking stock" todo ese rato. Nadie espera
+ * eso, y menos un jurado con tres minutos.
+ *
+ * Una llamada por CARTA, nunca una por tono. Cada una con su propio tope de
+ * tiempo: una carta lenta no puede arrastrar a las otras dieciséis. Y si todas
+ * fallan, no se reintenta en bucle: la app queda en modo snapshot y lo declara.
  */
 export async function refrescarStock(cartas: Carta[], signal?: AbortSignal): Promise<{ ok: boolean; conStock: number }> {
-  let conStock = 0;
-  let alguna = false;
+  const TOPE_MS = 15_000;
 
-  for (const c of cartas) {
+  const unaCarta = async (c: Carta): Promise<number | null> => {
     try {
+      const reloj = AbortSignal.timeout(TOPE_MS);
       const r = await fetch('/api/catalog', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        signal,
+        signal: signal ? AbortSignal.any([signal, reloj]) : reloj,
         body: JSON.stringify({
           jsonrpc: '2.0', id: Date.now(),
           method: 'tools/call',
           params: { name: 'get_color_card', arguments: { brand: c.card_id } },
         }),
       });
-      if (!r.ok) continue;
+      if (!r.ok) return null;
       const j = await r.json();
       const texto = j?.result?.content?.[0]?.text;
-      if (typeof texto !== 'string') continue;
+      if (typeof texto !== 'string') return null;
       const datos = JSON.parse(texto) as { colors?: { code: string; disponible: boolean | null }[] };
+      let n = 0;
       for (const col of datos.colors ?? []) {
         if (col.disponible === true) {
           stockVivo.set(`${c.card_id}:${String(col.code)}`, true);
-          conStock++;
+          n++;
         }
       }
-      alguna = true;
+      return n;
     } catch {
-      // Silencio a propósito: el modo snapshot es un estado válido, no un error
-      // que haya que gritar en consola una vez por carta.
+      // Silencio a propósito: el modo snapshot es un estado válido, no un
+      // error que haya que gritar diecisiete veces en la consola.
+      return null;
     }
-  }
+  };
 
-  stockConsultado = alguna;
-  return { ok: alguna, conStock };
+  const resultados = await Promise.all(cartas.map(unaCarta));
+  const buenas = resultados.filter((n): n is number => n !== null);
+  stockConsultado = buenas.length > 0;
+  return { ok: stockConsultado, conStock: buenas.reduce((a, b) => a + b, 0) };
 }
