@@ -1,0 +1,73 @@
+# Deny-all + allowlist. El default es NO publicar.
+#
+# Se invierte el sentido habitual del .gitignore a propósito. Una lista de
+# prohibidos falla en silencio el día que aparece un archivo que nadie previó
+# —que es exactamente como se filtra algo— y este repo es público y vive al
+# lado de un monorepo de negocio con credenciales. Acá, olvidarse de listar un
+# archivo hace que NO se publique, que es el modo correcto de fallar.
+#
+# Para agregar algo al repo hay que sumarle una línea `!ruta` abajo. Si no está
+# en la lista, no existe para git.
+
+# 1. Ignorar todo.
+/*
+/**
+
+# 2. Re-incluir SOLO lo que este proyecto publica.
+!.gitignore
+!LICENSE
+!README.md
+!PRIVACY.md
+!SECURITY.md
+!index.html
+!package.json
+!package-lock.json
+!tsconfig.json
+!vite.config.ts
+!vercel.json
+
+!src/
+!src/**
+!data/
+!data/**
+!public/
+!public/**
+!tests/
+!tests/**
+!evals/
+!evals/**
+!relay/
+!relay/**
+!scripts/
+!scripts/**
+
+# 3. Y aun dentro de lo permitido, estos NUNCA — por si alguno cae ahí adentro.
+#    Las reglas de abajo ganan porque van al final.
+.env
+.env.*
+*.env
+*-creds
+*-creds.json
+*.pem
+*.key
+*.p12
+*.keystore
+id_rsa*
+*.tok
+.tok*
+apikey*
+*secret*
+*Secret*
+*SECRET*
+credentials*
+auth.json
+.grok/
+.vercel/
+.wrangler/
+node_modules/
+dist/
+.DS_Store
+*.log
+npm-debug.log*
+coverage/
+.cache/
