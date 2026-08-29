@@ -1,0 +1,2166 @@
+{
+ "card_id": "copic-ink",
+ "brand": "Copic",
+ "line": "Ink",
+ "medium": "alcohol-ink-refill",
+ "opacity": "transparent",
+ "substrates": [
+  "paper",
+  "cardstock"
+ ],
+ "base_price_clp": 8900,
+ "url": "https://boykot.cl/colores/copic-ink",
+ "tones_total": 358,
+ "tones_with_hex": 336,
+ "baked_at": "2026-08-29",
+ "tones": [
+  {
+   "code": "0",
+   "name": null,
+   "hex": "#ffffff",
+   "sku": null
+  },
+  {
+   "code": "100",
+   "name": null,
+   "hex": "#231f20",
+   "sku": null
+  },
+  {
+   "code": "110",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "B0000",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "B000",
+   "name": null,
+   "hex": "#e8f5fb",
+   "sku": null
+  },
+  {
+   "code": "B00",
+   "name": null,
+   "hex": "#d5eef4",
+   "sku": null
+  },
+  {
+   "code": "B01",
+   "name": null,
+   "hex": "#89d3e5",
+   "sku": null
+  },
+  {
+   "code": "B02",
+   "name": null,
+   "hex": "#72c9e0",
+   "sku": null
+  },
+  {
+   "code": "B04",
+   "name": null,
+   "hex": "#33a8d4",
+   "sku": null
+  },
+  {
+   "code": "B05",
+   "name": null,
+   "hex": "#1393c8",
+   "sku": null
+  },
+  {
+   "code": "B06",
+   "name": null,
+   "hex": "#008ac4",
+   "sku": null
+  },
+  {
+   "code": "B12",
+   "name": null,
+   "hex": "#a7d7ec",
+   "sku": null
+  },
+  {
+   "code": "B14",
+   "name": null,
+   "hex": "#5bbce4",
+   "sku": null
+  },
+  {
+   "code": "B16",
+   "name": null,
+   "hex": "#3a88c5",
+   "sku": null
+  },
+  {
+   "code": "B18",
+   "name": null,
+   "hex": "#1b4f9a",
+   "sku": null
+  },
+  {
+   "code": "B21",
+   "name": null,
+   "hex": "#b2d9f1",
+   "sku": null
+  },
+  {
+   "code": "B23",
+   "name": null,
+   "hex": "#5ba4d4",
+   "sku": null
+  },
+  {
+   "code": "B24",
+   "name": null,
+   "hex": "#3a8dc7",
+   "sku": null
+  },
+  {
+   "code": "B26",
+   "name": null,
+   "hex": "#1f62ae",
+   "sku": null
+  },
+  {
+   "code": "B28",
+   "name": null,
+   "hex": "#1a4a9c",
+   "sku": null
+  },
+  {
+   "code": "B29",
+   "name": null,
+   "hex": "#203892",
+   "sku": null
+  },
+  {
+   "code": "B32",
+   "name": null,
+   "hex": "#c9e6f4",
+   "sku": null
+  },
+  {
+   "code": "B34",
+   "name": null,
+   "hex": "#9dd0ed",
+   "sku": null
+  },
+  {
+   "code": "B37",
+   "name": null,
+   "hex": "#4d9ed8",
+   "sku": null
+  },
+  {
+   "code": "B39",
+   "name": null,
+   "hex": "#1a3c8c",
+   "sku": null
+  },
+  {
+   "code": "B41",
+   "name": null,
+   "hex": "#c3e0f0",
+   "sku": null
+  },
+  {
+   "code": "B45",
+   "name": null,
+   "hex": "#8cbedd",
+   "sku": null
+  },
+  {
+   "code": "B52",
+   "name": null,
+   "hex": "#a2bfcf",
+   "sku": null
+  },
+  {
+   "code": "B60",
+   "name": null,
+   "hex": "#c9dce8",
+   "sku": null
+  },
+  {
+   "code": "B63",
+   "name": null,
+   "hex": "#9ab8d4",
+   "sku": null
+  },
+  {
+   "code": "B66",
+   "name": null,
+   "hex": "#5278a0",
+   "sku": null
+  },
+  {
+   "code": "B69",
+   "name": null,
+   "hex": "#2b4d7a",
+   "sku": null
+  },
+  {
+   "code": "B79",
+   "name": null,
+   "hex": "#3c3f8c",
+   "sku": null
+  },
+  {
+   "code": "B91",
+   "name": null,
+   "hex": "#c5d7e8",
+   "sku": null
+  },
+  {
+   "code": "B93",
+   "name": null,
+   "hex": "#92a9c0",
+   "sku": null
+  },
+  {
+   "code": "B95",
+   "name": null,
+   "hex": "#7b93a8",
+   "sku": null
+  },
+  {
+   "code": "B97",
+   "name": null,
+   "hex": "#2f3d5a",
+   "sku": null
+  },
+  {
+   "code": "B99",
+   "name": null,
+   "hex": "#222941",
+   "sku": null
+  },
+  {
+   "code": "BG0000",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "BG000",
+   "name": null,
+   "hex": "#e5f5f6",
+   "sku": null
+  },
+  {
+   "code": "BG01",
+   "name": null,
+   "hex": "#6fc9ce",
+   "sku": null
+  },
+  {
+   "code": "BG02",
+   "name": null,
+   "hex": "#00a5c0",
+   "sku": null
+  },
+  {
+   "code": "BG05",
+   "name": null,
+   "hex": "#007fa8",
+   "sku": null
+  },
+  {
+   "code": "BG07",
+   "name": null,
+   "hex": "#006895",
+   "sku": null
+  },
+  {
+   "code": "BG09",
+   "name": null,
+   "hex": "#00556b",
+   "sku": null
+  },
+  {
+   "code": "BG10",
+   "name": null,
+   "hex": "#c4e4e8",
+   "sku": null
+  },
+  {
+   "code": "BG11",
+   "name": null,
+   "hex": "#e8f5f7",
+   "sku": null
+  },
+  {
+   "code": "BG13",
+   "name": null,
+   "hex": "#a8dfe3",
+   "sku": null
+  },
+  {
+   "code": "BG15",
+   "name": null,
+   "hex": "#5ec5cc",
+   "sku": null
+  },
+  {
+   "code": "BG18",
+   "name": null,
+   "hex": "#00829e",
+   "sku": null
+  },
+  {
+   "code": "BG23",
+   "name": null,
+   "hex": "#b8e0e5",
+   "sku": null
+  },
+  {
+   "code": "BG32",
+   "name": null,
+   "hex": "#a5dedf",
+   "sku": null
+  },
+  {
+   "code": "BG34",
+   "name": null,
+   "hex": "#79cdcd",
+   "sku": null
+  },
+  {
+   "code": "BG45",
+   "name": null,
+   "hex": "#48b5ad",
+   "sku": null
+  },
+  {
+   "code": "BG49",
+   "name": null,
+   "hex": "#2b7a7a",
+   "sku": null
+  },
+  {
+   "code": "BG53",
+   "name": null,
+   "hex": "#cdeee8",
+   "sku": null
+  },
+  {
+   "code": "BG57",
+   "name": null,
+   "hex": "#3d8575",
+   "sku": null
+  },
+  {
+   "code": "BG70",
+   "name": null,
+   "hex": "#d4e8e4",
+   "sku": null
+  },
+  {
+   "code": "BG72",
+   "name": null,
+   "hex": "#98c8c0",
+   "sku": null
+  },
+  {
+   "code": "BG75",
+   "name": null,
+   "hex": "#3b7a6a",
+   "sku": null
+  },
+  {
+   "code": "BG78",
+   "name": null,
+   "hex": "#5e7060",
+   "sku": null
+  },
+  {
+   "code": "BG90",
+   "name": null,
+   "hex": "#d3e4e0",
+   "sku": null
+  },
+  {
+   "code": "BG93",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "BG96",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "BG99",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "BV0000",
+   "name": null,
+   "hex": "#f0ecf7",
+   "sku": null
+  },
+  {
+   "code": "BV000",
+   "name": null,
+   "hex": "#e9e0ee",
+   "sku": null
+  },
+  {
+   "code": "BV00",
+   "name": null,
+   "hex": "#d8ceea",
+   "sku": null
+  },
+  {
+   "code": "BV01",
+   "name": null,
+   "hex": "#b09dd6",
+   "sku": null
+  },
+  {
+   "code": "BV02",
+   "name": null,
+   "hex": "#8b78c0",
+   "sku": null
+  },
+  {
+   "code": "BV04",
+   "name": null,
+   "hex": "#6b55b0",
+   "sku": null
+  },
+  {
+   "code": "BV08",
+   "name": null,
+   "hex": "#5040a0",
+   "sku": null
+  },
+  {
+   "code": "BV11",
+   "name": null,
+   "hex": "#c5b8dc",
+   "sku": null
+  },
+  {
+   "code": "BV13",
+   "name": null,
+   "hex": "#9b88d0",
+   "sku": null
+  },
+  {
+   "code": "BV17",
+   "name": null,
+   "hex": "#3d2e80",
+   "sku": null
+  },
+  {
+   "code": "BV20",
+   "name": null,
+   "hex": "#c8bce0",
+   "sku": null
+  },
+  {
+   "code": "BV23",
+   "name": null,
+   "hex": "#a090c0",
+   "sku": null
+  },
+  {
+   "code": "BV25",
+   "name": null,
+   "hex": "#8878b8",
+   "sku": null
+  },
+  {
+   "code": "BV29",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "BV31",
+   "name": null,
+   "hex": "#d5cce5",
+   "sku": null
+  },
+  {
+   "code": "BV34",
+   "name": null,
+   "hex": "#9080c5",
+   "sku": null
+  },
+  {
+   "code": "C00",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "C0",
+   "name": null,
+   "hex": "#f5f5f5",
+   "sku": null
+  },
+  {
+   "code": "C1",
+   "name": null,
+   "hex": "#ebebeb",
+   "sku": null
+  },
+  {
+   "code": "C2",
+   "name": null,
+   "hex": "#d9d9d9",
+   "sku": null
+  },
+  {
+   "code": "C3",
+   "name": null,
+   "hex": "#c6c6c6",
+   "sku": null
+  },
+  {
+   "code": "C4",
+   "name": null,
+   "hex": "#adadad",
+   "sku": null
+  },
+  {
+   "code": "C5",
+   "name": null,
+   "hex": "#949494",
+   "sku": null
+  },
+  {
+   "code": "C6",
+   "name": null,
+   "hex": "#7a7a7a",
+   "sku": null
+  },
+  {
+   "code": "C7",
+   "name": null,
+   "hex": "#5e5e5e",
+   "sku": null
+  },
+  {
+   "code": "C8",
+   "name": null,
+   "hex": "#434343",
+   "sku": null
+  },
+  {
+   "code": "C9",
+   "name": null,
+   "hex": "#2a2a2a",
+   "sku": null
+  },
+  {
+   "code": "C10",
+   "name": null,
+   "hex": "#1a1a1a",
+   "sku": null
+  },
+  {
+   "code": "E0000",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "E000",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "E00",
+   "name": null,
+   "hex": "#f7e6dc",
+   "sku": null
+  },
+  {
+   "code": "E01",
+   "name": null,
+   "hex": "#f9d5c8",
+   "sku": null
+  },
+  {
+   "code": "E02",
+   "name": null,
+   "hex": "#f7c5b5",
+   "sku": null
+  },
+  {
+   "code": "E04",
+   "name": null,
+   "hex": "#f2a886",
+   "sku": null
+  },
+  {
+   "code": "E07",
+   "name": null,
+   "hex": "#e2945a",
+   "sku": null
+  },
+  {
+   "code": "E08",
+   "name": null,
+   "hex": "#d4874a",
+   "sku": null
+  },
+  {
+   "code": "E09",
+   "name": null,
+   "hex": "#c87a3c",
+   "sku": null
+  },
+  {
+   "code": "E11",
+   "name": null,
+   "hex": "#f5dacc",
+   "sku": null
+  },
+  {
+   "code": "E13",
+   "name": null,
+   "hex": "#f0c8a8",
+   "sku": null
+  },
+  {
+   "code": "E15",
+   "name": null,
+   "hex": "#d4956a",
+   "sku": null
+  },
+  {
+   "code": "E17",
+   "name": null,
+   "hex": "#b8743a",
+   "sku": null
+  },
+  {
+   "code": "E18",
+   "name": null,
+   "hex": "#a05e28",
+   "sku": null
+  },
+  {
+   "code": "E19",
+   "name": null,
+   "hex": "#8b4c22",
+   "sku": null
+  },
+  {
+   "code": "E21",
+   "name": null,
+   "hex": "#f9e0d5",
+   "sku": null
+  },
+  {
+   "code": "E23",
+   "name": null,
+   "hex": "#d4a882",
+   "sku": null
+  },
+  {
+   "code": "E25",
+   "name": null,
+   "hex": "#c08060",
+   "sku": null
+  },
+  {
+   "code": "E27",
+   "name": null,
+   "hex": "#a06040",
+   "sku": null
+  },
+  {
+   "code": "E29",
+   "name": null,
+   "hex": "#7a3e20",
+   "sku": null
+  },
+  {
+   "code": "E30",
+   "name": null,
+   "hex": "#f9ead8",
+   "sku": null
+  },
+  {
+   "code": "E31",
+   "name": null,
+   "hex": "#f5d8c0",
+   "sku": null
+  },
+  {
+   "code": "E33",
+   "name": null,
+   "hex": "#eaba92",
+   "sku": null
+  },
+  {
+   "code": "E34",
+   "name": null,
+   "hex": "#d4956a",
+   "sku": null
+  },
+  {
+   "code": "E35",
+   "name": null,
+   "hex": "#c8825a",
+   "sku": null
+  },
+  {
+   "code": "E37",
+   "name": null,
+   "hex": "#7a4a2a",
+   "sku": null
+  },
+  {
+   "code": "E39",
+   "name": null,
+   "hex": "#5e3020",
+   "sku": null
+  },
+  {
+   "code": "E40",
+   "name": null,
+   "hex": "#f9f0e8",
+   "sku": null
+  },
+  {
+   "code": "E41",
+   "name": null,
+   "hex": "#f9eee5",
+   "sku": null
+  },
+  {
+   "code": "E42",
+   "name": null,
+   "hex": "#f5e5d5",
+   "sku": null
+  },
+  {
+   "code": "E43",
+   "name": null,
+   "hex": "#eedac5",
+   "sku": null
+  },
+  {
+   "code": "E44",
+   "name": null,
+   "hex": "#d8b890",
+   "sku": null
+  },
+  {
+   "code": "E47",
+   "name": null,
+   "hex": "#9a6040",
+   "sku": null
+  },
+  {
+   "code": "E49",
+   "name": null,
+   "hex": "#6a3020",
+   "sku": null
+  },
+  {
+   "code": "E50",
+   "name": null,
+   "hex": "#f9f0e5",
+   "sku": null
+  },
+  {
+   "code": "E51",
+   "name": null,
+   "hex": "#f9f2ea",
+   "sku": null
+  },
+  {
+   "code": "E53",
+   "name": null,
+   "hex": "#edd9c0",
+   "sku": null
+  },
+  {
+   "code": "E55",
+   "name": null,
+   "hex": "#d4ae80",
+   "sku": null
+  },
+  {
+   "code": "E57",
+   "name": null,
+   "hex": "#a87850",
+   "sku": null
+  },
+  {
+   "code": "E59",
+   "name": null,
+   "hex": "#7a5030",
+   "sku": null
+  },
+  {
+   "code": "E70",
+   "name": null,
+   "hex": "#e8cabe",
+   "sku": null
+  },
+  {
+   "code": "E71",
+   "name": null,
+   "hex": "#f0d5b0",
+   "sku": null
+  },
+  {
+   "code": "E74",
+   "name": null,
+   "hex": "#b88060",
+   "sku": null
+  },
+  {
+   "code": "E77",
+   "name": null,
+   "hex": "#7a4040",
+   "sku": null
+  },
+  {
+   "code": "E79",
+   "name": null,
+   "hex": "#5a2828",
+   "sku": null
+  },
+  {
+   "code": "E81",
+   "name": null,
+   "hex": "#f5ead5",
+   "sku": null
+  },
+  {
+   "code": "E84",
+   "name": null,
+   "hex": "#a8926a",
+   "sku": null
+  },
+  {
+   "code": "E87",
+   "name": null,
+   "hex": "#6a4a3a",
+   "sku": null
+  },
+  {
+   "code": "E89",
+   "name": null,
+   "hex": "#4a2e20",
+   "sku": null
+  },
+  {
+   "code": "E93",
+   "name": null,
+   "hex": "#f0c8b8",
+   "sku": null
+  },
+  {
+   "code": "E95",
+   "name": null,
+   "hex": "#f5bca8",
+   "sku": null
+  },
+  {
+   "code": "E97",
+   "name": null,
+   "hex": "#e08050",
+   "sku": null
+  },
+  {
+   "code": "E99",
+   "name": null,
+   "hex": "#c05828",
+   "sku": null
+  },
+  {
+   "code": "FB2",
+   "name": null,
+   "hex": "#00b0ff",
+   "sku": null
+  },
+  {
+   "code": "FBG2",
+   "name": null,
+   "hex": "#00e8e0",
+   "sku": null
+  },
+  {
+   "code": "FRV1",
+   "name": null,
+   "hex": "#ff40c0",
+   "sku": null
+  },
+  {
+   "code": "FV2",
+   "name": null,
+   "hex": "#c040ff",
+   "sku": null
+  },
+  {
+   "code": "FY1",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "FYG1",
+   "name": null,
+   "hex": "#80ff40",
+   "sku": null
+  },
+  {
+   "code": "FYG2",
+   "name": null,
+   "hex": "#c0ff20",
+   "sku": null
+  },
+  {
+   "code": "FYR1",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "G0000",
+   "name": null,
+   "hex": "#f0f9f0",
+   "sku": null
+  },
+  {
+   "code": "G000",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "G00",
+   "name": null,
+   "hex": "#d0efda",
+   "sku": null
+  },
+  {
+   "code": "G02",
+   "name": null,
+   "hex": "#9cdb9a",
+   "sku": null
+  },
+  {
+   "code": "G03",
+   "name": null,
+   "hex": "#7cd07a",
+   "sku": null
+  },
+  {
+   "code": "G05",
+   "name": null,
+   "hex": "#52b858",
+   "sku": null
+  },
+  {
+   "code": "G07",
+   "name": null,
+   "hex": "#28a040",
+   "sku": null
+  },
+  {
+   "code": "G09",
+   "name": null,
+   "hex": "#189038",
+   "sku": null
+  },
+  {
+   "code": "G12",
+   "name": null,
+   "hex": "#a8dfb0",
+   "sku": null
+  },
+  {
+   "code": "G14",
+   "name": null,
+   "hex": "#7dcc80",
+   "sku": null
+  },
+  {
+   "code": "G16",
+   "name": null,
+   "hex": "#3cb050",
+   "sku": null
+  },
+  {
+   "code": "G17",
+   "name": null,
+   "hex": "#228030",
+   "sku": null
+  },
+  {
+   "code": "G19",
+   "name": null,
+   "hex": "#009020",
+   "sku": null
+  },
+  {
+   "code": "G20",
+   "name": null,
+   "hex": "#f0f8f0",
+   "sku": null
+  },
+  {
+   "code": "G21",
+   "name": null,
+   "hex": "#cceacc",
+   "sku": null
+  },
+  {
+   "code": "G24",
+   "name": null,
+   "hex": "#90cc94",
+   "sku": null
+  },
+  {
+   "code": "G28",
+   "name": null,
+   "hex": "#3a9050",
+   "sku": null
+  },
+  {
+   "code": "G29",
+   "name": null,
+   "hex": "#186030",
+   "sku": null
+  },
+  {
+   "code": "G40",
+   "name": null,
+   "hex": "#c0d8c0",
+   "sku": null
+  },
+  {
+   "code": "G43",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "G46",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "G82",
+   "name": null,
+   "hex": "#c8dcc0",
+   "sku": null
+  },
+  {
+   "code": "G85",
+   "name": null,
+   "hex": "#6a9070",
+   "sku": null
+  },
+  {
+   "code": "G94",
+   "name": null,
+   "hex": "#909478",
+   "sku": null
+  },
+  {
+   "code": "G99",
+   "name": null,
+   "hex": "#606840",
+   "sku": null
+  },
+  {
+   "code": "N0",
+   "name": null,
+   "hex": "#f8f8f8",
+   "sku": null
+  },
+  {
+   "code": "N1",
+   "name": null,
+   "hex": "#f0f0f0",
+   "sku": null
+  },
+  {
+   "code": "N2",
+   "name": null,
+   "hex": "#e0e0e0",
+   "sku": null
+  },
+  {
+   "code": "N3",
+   "name": null,
+   "hex": "#cccccc",
+   "sku": null
+  },
+  {
+   "code": "N4",
+   "name": null,
+   "hex": "#b8b8b8",
+   "sku": null
+  },
+  {
+   "code": "N5",
+   "name": null,
+   "hex": "#a0a0a0",
+   "sku": null
+  },
+  {
+   "code": "N6",
+   "name": null,
+   "hex": "#888888",
+   "sku": null
+  },
+  {
+   "code": "N7",
+   "name": null,
+   "hex": "#6a6a6a",
+   "sku": null
+  },
+  {
+   "code": "N8",
+   "name": null,
+   "hex": "#4a4a4a",
+   "sku": null
+  },
+  {
+   "code": "N9",
+   "name": null,
+   "hex": "#303030",
+   "sku": null
+  },
+  {
+   "code": "N10",
+   "name": null,
+   "hex": "#181818",
+   "sku": null
+  },
+  {
+   "code": "R0000",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "R000",
+   "name": null,
+   "hex": "#fef0f0",
+   "sku": null
+  },
+  {
+   "code": "R00",
+   "name": null,
+   "hex": "#fde5e5",
+   "sku": null
+  },
+  {
+   "code": "R01",
+   "name": null,
+   "hex": "#fdd5d5",
+   "sku": null
+  },
+  {
+   "code": "R02",
+   "name": null,
+   "hex": "#fac4c4",
+   "sku": null
+  },
+  {
+   "code": "R05",
+   "name": null,
+   "hex": "#f58080",
+   "sku": null
+  },
+  {
+   "code": "R08",
+   "name": null,
+   "hex": "#f04040",
+   "sku": null
+  },
+  {
+   "code": "R11",
+   "name": null,
+   "hex": "#fad0d0",
+   "sku": null
+  },
+  {
+   "code": "R12",
+   "name": null,
+   "hex": "#f8b8b8",
+   "sku": null
+  },
+  {
+   "code": "R14",
+   "name": null,
+   "hex": "#f59090",
+   "sku": null
+  },
+  {
+   "code": "R17",
+   "name": null,
+   "hex": "#f07040",
+   "sku": null
+  },
+  {
+   "code": "R20",
+   "name": null,
+   "hex": "#fae0d8",
+   "sku": null
+  },
+  {
+   "code": "R21",
+   "name": null,
+   "hex": "#f8c8b8",
+   "sku": null
+  },
+  {
+   "code": "R22",
+   "name": null,
+   "hex": "#f8b8a0",
+   "sku": null
+  },
+  {
+   "code": "R24",
+   "name": null,
+   "hex": "#f8a080",
+   "sku": null
+  },
+  {
+   "code": "R27",
+   "name": null,
+   "hex": "#e84040",
+   "sku": null
+  },
+  {
+   "code": "R29",
+   "name": null,
+   "hex": "#d82828",
+   "sku": null
+  },
+  {
+   "code": "R30",
+   "name": null,
+   "hex": "#fde8e0",
+   "sku": null
+  },
+  {
+   "code": "R32",
+   "name": null,
+   "hex": "#fdc8b0",
+   "sku": null
+  },
+  {
+   "code": "R35",
+   "name": null,
+   "hex": "#f89870",
+   "sku": null
+  },
+  {
+   "code": "R37",
+   "name": null,
+   "hex": "#d04040",
+   "sku": null
+  },
+  {
+   "code": "R39",
+   "name": null,
+   "hex": "#a02828",
+   "sku": null
+  },
+  {
+   "code": "R43",
+   "name": null,
+   "hex": "#e07090",
+   "sku": null
+  },
+  {
+   "code": "R46",
+   "name": null,
+   "hex": "#c82020",
+   "sku": null
+  },
+  {
+   "code": "R56",
+   "name": null,
+   "hex": "#a03050",
+   "sku": null
+  },
+  {
+   "code": "R59",
+   "name": null,
+   "hex": "#802030",
+   "sku": null
+  },
+  {
+   "code": "R81",
+   "name": null,
+   "hex": "#fab8c8",
+   "sku": null
+  },
+  {
+   "code": "R83",
+   "name": null,
+   "hex": "#f890a8",
+   "sku": null
+  },
+  {
+   "code": "R85",
+   "name": null,
+   "hex": "#e85880",
+   "sku": null
+  },
+  {
+   "code": "R89",
+   "name": null,
+   "hex": "#902040",
+   "sku": null
+  },
+  {
+   "code": "RV0000",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "RV000",
+   "name": null,
+   "hex": "#f9ebf5",
+   "sku": null
+  },
+  {
+   "code": "RV00",
+   "name": null,
+   "hex": "#f5dbf0",
+   "sku": null
+  },
+  {
+   "code": "RV02",
+   "name": null,
+   "hex": "#f8c0e8",
+   "sku": null
+  },
+  {
+   "code": "RV04",
+   "name": null,
+   "hex": "#f880d8",
+   "sku": null
+  },
+  {
+   "code": "RV06",
+   "name": null,
+   "hex": "#e848c8",
+   "sku": null
+  },
+  {
+   "code": "RV09",
+   "name": null,
+   "hex": "#c020a0",
+   "sku": null
+  },
+  {
+   "code": "RV10",
+   "name": null,
+   "hex": "#fae0f0",
+   "sku": null
+  },
+  {
+   "code": "RV11",
+   "name": null,
+   "hex": "#f8c8e8",
+   "sku": null
+  },
+  {
+   "code": "RV13",
+   "name": null,
+   "hex": "#f8a8d8",
+   "sku": null
+  },
+  {
+   "code": "RV14",
+   "name": null,
+   "hex": "#f880c0",
+   "sku": null
+  },
+  {
+   "code": "RV17",
+   "name": null,
+   "hex": "#d040a0",
+   "sku": null
+  },
+  {
+   "code": "RV19",
+   "name": null,
+   "hex": "#a82090",
+   "sku": null
+  },
+  {
+   "code": "RV21",
+   "name": null,
+   "hex": "#fae5f0",
+   "sku": null
+  },
+  {
+   "code": "RV23",
+   "name": null,
+   "hex": "#f8c0d8",
+   "sku": null
+  },
+  {
+   "code": "RV25",
+   "name": null,
+   "hex": "#f090b8",
+   "sku": null
+  },
+  {
+   "code": "RV29",
+   "name": null,
+   "hex": "#c02880",
+   "sku": null
+  },
+  {
+   "code": "RV32",
+   "name": null,
+   "hex": "#f0b0d0",
+   "sku": null
+  },
+  {
+   "code": "RV34",
+   "name": null,
+   "hex": "#e888b8",
+   "sku": null
+  },
+  {
+   "code": "RV42",
+   "name": null,
+   "hex": "#f8b0b8",
+   "sku": null
+  },
+  {
+   "code": "RV52",
+   "name": null,
+   "hex": "#f8c8d8",
+   "sku": null
+  },
+  {
+   "code": "RV55",
+   "name": null,
+   "hex": "#d070a0",
+   "sku": null
+  },
+  {
+   "code": "RV63",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "RV66",
+   "name": null,
+   "hex": "#c04878",
+   "sku": null
+  },
+  {
+   "code": "RV69",
+   "name": null,
+   "hex": "#a03060",
+   "sku": null
+  },
+  {
+   "code": "RV91",
+   "name": null,
+   "hex": "#ecc0d4",
+   "sku": null
+  },
+  {
+   "code": "RV93",
+   "name": null,
+   "hex": "#d8a0b8",
+   "sku": null
+  },
+  {
+   "code": "RV95",
+   "name": null,
+   "hex": "#f8c0d8",
+   "sku": null
+  },
+  {
+   "code": "RV99",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "T0",
+   "name": null,
+   "hex": "#f6f6f4",
+   "sku": null
+  },
+  {
+   "code": "T1",
+   "name": null,
+   "hex": "#ebebea",
+   "sku": null
+  },
+  {
+   "code": "T2",
+   "name": null,
+   "hex": "#ddddd8",
+   "sku": null
+  },
+  {
+   "code": "T3",
+   "name": null,
+   "hex": "#cacac4",
+   "sku": null
+  },
+  {
+   "code": "T4",
+   "name": null,
+   "hex": "#b5b5ae",
+   "sku": null
+  },
+  {
+   "code": "T5",
+   "name": null,
+   "hex": "#9e9e98",
+   "sku": null
+  },
+  {
+   "code": "T6",
+   "name": null,
+   "hex": "#888880",
+   "sku": null
+  },
+  {
+   "code": "T7",
+   "name": null,
+   "hex": "#6e6e68",
+   "sku": null
+  },
+  {
+   "code": "T8",
+   "name": null,
+   "hex": "#545450",
+   "sku": null
+  },
+  {
+   "code": "T9",
+   "name": null,
+   "hex": "#3a3a35",
+   "sku": null
+  },
+  {
+   "code": "T10",
+   "name": null,
+   "hex": "#222220",
+   "sku": null
+  },
+  {
+   "code": "V0000",
+   "name": null,
+   "hex": "#f5f0f8",
+   "sku": null
+  },
+  {
+   "code": "V000",
+   "name": null,
+   "hex": "#ebe5f5",
+   "sku": null
+  },
+  {
+   "code": "V01",
+   "name": null,
+   "hex": "#c8b0dc",
+   "sku": null
+  },
+  {
+   "code": "V04",
+   "name": null,
+   "hex": "#b09aec",
+   "sku": null
+  },
+  {
+   "code": "V05",
+   "name": null,
+   "hex": "#9a88d8",
+   "sku": null
+  },
+  {
+   "code": "V06",
+   "name": null,
+   "hex": "#8878d0",
+   "sku": null
+  },
+  {
+   "code": "V09",
+   "name": null,
+   "hex": "#6060c0",
+   "sku": null
+  },
+  {
+   "code": "V12",
+   "name": null,
+   "hex": "#ddd0ec",
+   "sku": null
+  },
+  {
+   "code": "V15",
+   "name": null,
+   "hex": "#b8a0d8",
+   "sku": null
+  },
+  {
+   "code": "V17",
+   "name": null,
+   "hex": "#8060b8",
+   "sku": null
+  },
+  {
+   "code": "V20",
+   "name": null,
+   "hex": "#d8ccec",
+   "sku": null
+  },
+  {
+   "code": "V22",
+   "name": null,
+   "hex": "#c0b0dc",
+   "sku": null
+  },
+  {
+   "code": "V25",
+   "name": null,
+   "hex": "#a890cc",
+   "sku": null
+  },
+  {
+   "code": "V28",
+   "name": null,
+   "hex": "#704888",
+   "sku": null
+  },
+  {
+   "code": "V91",
+   "name": null,
+   "hex": "#d8c0e0",
+   "sku": null
+  },
+  {
+   "code": "V93",
+   "name": null,
+   "hex": "#c0a0d0",
+   "sku": null
+  },
+  {
+   "code": "V95",
+   "name": null,
+   "hex": "#a880c0",
+   "sku": null
+  },
+  {
+   "code": "V99",
+   "name": null,
+   "hex": "#503070",
+   "sku": null
+  },
+  {
+   "code": "W00",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "W0",
+   "name": null,
+   "hex": "#f8f7f5",
+   "sku": null
+  },
+  {
+   "code": "W1",
+   "name": null,
+   "hex": "#f0edea",
+   "sku": null
+  },
+  {
+   "code": "W2",
+   "name": null,
+   "hex": "#e4e0da",
+   "sku": null
+  },
+  {
+   "code": "W3",
+   "name": null,
+   "hex": "#d0cac2",
+   "sku": null
+  },
+  {
+   "code": "W4",
+   "name": null,
+   "hex": "#bcb4aa",
+   "sku": null
+  },
+  {
+   "code": "W5",
+   "name": null,
+   "hex": "#a49c90",
+   "sku": null
+  },
+  {
+   "code": "W6",
+   "name": null,
+   "hex": "#8c8278",
+   "sku": null
+  },
+  {
+   "code": "W7",
+   "name": null,
+   "hex": "#706860",
+   "sku": null
+  },
+  {
+   "code": "W8",
+   "name": null,
+   "hex": "#504a44",
+   "sku": null
+  },
+  {
+   "code": "W9",
+   "name": null,
+   "hex": "#342e28",
+   "sku": null
+  },
+  {
+   "code": "W10",
+   "name": null,
+   "hex": "#201a14",
+   "sku": null
+  },
+  {
+   "code": "Y0000",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "Y000",
+   "name": null,
+   "hex": "#fdfbe5",
+   "sku": null
+  },
+  {
+   "code": "Y00",
+   "name": null,
+   "hex": "#fbf8d0",
+   "sku": null
+  },
+  {
+   "code": "Y02",
+   "name": null,
+   "hex": "#faf598",
+   "sku": null
+  },
+  {
+   "code": "Y04",
+   "name": null,
+   "hex": "#f8f040",
+   "sku": null
+  },
+  {
+   "code": "Y06",
+   "name": null,
+   "hex": "#f5e800",
+   "sku": null
+  },
+  {
+   "code": "Y08",
+   "name": null,
+   "hex": "#f0e000",
+   "sku": null
+  },
+  {
+   "code": "Y11",
+   "name": null,
+   "hex": "#fefce8",
+   "sku": null
+  },
+  {
+   "code": "Y13",
+   "name": null,
+   "hex": "#fbf7a0",
+   "sku": null
+  },
+  {
+   "code": "Y15",
+   "name": null,
+   "hex": "#f8f060",
+   "sku": null
+  },
+  {
+   "code": "Y17",
+   "name": null,
+   "hex": "#f5dc20",
+   "sku": null
+  },
+  {
+   "code": "Y18",
+   "name": null,
+   "hex": "#f8d418",
+   "sku": null
+  },
+  {
+   "code": "Y19",
+   "name": null,
+   "hex": "#f8c820",
+   "sku": null
+  },
+  {
+   "code": "Y21",
+   "name": null,
+   "hex": "#fbf5c0",
+   "sku": null
+  },
+  {
+   "code": "Y23",
+   "name": null,
+   "hex": "#f0dca0",
+   "sku": null
+  },
+  {
+   "code": "Y26",
+   "name": null,
+   "hex": "#d8b058",
+   "sku": null
+  },
+  {
+   "code": "Y28",
+   "name": null,
+   "hex": "#c89030",
+   "sku": null
+  },
+  {
+   "code": "Y32",
+   "name": null,
+   "hex": "#f5e8b0",
+   "sku": null
+  },
+  {
+   "code": "Y35",
+   "name": null,
+   "hex": "#f0d080",
+   "sku": null
+  },
+  {
+   "code": "Y38",
+   "name": null,
+   "hex": "#e8b840",
+   "sku": null
+  },
+  {
+   "code": "YG0000",
+   "name": null,
+   "hex": "#f5faee",
+   "sku": null
+  },
+  {
+   "code": "YG00",
+   "name": null,
+   "hex": "#e8f5d8",
+   "sku": null
+  },
+  {
+   "code": "YG01",
+   "name": null,
+   "hex": "#d0f0c0",
+   "sku": null
+  },
+  {
+   "code": "YG03",
+   "name": null,
+   "hex": "#a8e090",
+   "sku": null
+  },
+  {
+   "code": "YG05",
+   "name": null,
+   "hex": "#90d070",
+   "sku": null
+  },
+  {
+   "code": "YG06",
+   "name": null,
+   "hex": "#78c858",
+   "sku": null
+  },
+  {
+   "code": "YG07",
+   "name": null,
+   "hex": "#60b840",
+   "sku": null
+  },
+  {
+   "code": "YG09",
+   "name": null,
+   "hex": "#48a828",
+   "sku": null
+  },
+  {
+   "code": "YG11",
+   "name": null,
+   "hex": "#d8efc0",
+   "sku": null
+  },
+  {
+   "code": "YG13",
+   "name": null,
+   "hex": "#b8e090",
+   "sku": null
+  },
+  {
+   "code": "YG17",
+   "name": null,
+   "hex": "#70c040",
+   "sku": null
+  },
+  {
+   "code": "YG21",
+   "name": null,
+   "hex": "#e0f0c0",
+   "sku": null
+  },
+  {
+   "code": "YG23",
+   "name": null,
+   "hex": "#b0d890",
+   "sku": null
+  },
+  {
+   "code": "YG25",
+   "name": null,
+   "hex": "#98c878",
+   "sku": null
+  },
+  {
+   "code": "YG41",
+   "name": null,
+   "hex": "#c8e0c0",
+   "sku": null
+  },
+  {
+   "code": "YG45",
+   "name": null,
+   "hex": "#98c890",
+   "sku": null
+  },
+  {
+   "code": "YG61",
+   "name": null,
+   "hex": "#c8e0a8",
+   "sku": null
+  },
+  {
+   "code": "YG63",
+   "name": null,
+   "hex": "#a8c878",
+   "sku": null
+  },
+  {
+   "code": "YG67",
+   "name": null,
+   "hex": "#78a048",
+   "sku": null
+  },
+  {
+   "code": "YG91",
+   "name": null,
+   "hex": "#d0d0a8",
+   "sku": null
+  },
+  {
+   "code": "YG93",
+   "name": null,
+   "hex": "#c0c090",
+   "sku": null
+  },
+  {
+   "code": "YG95",
+   "name": null,
+   "hex": "#b8b880",
+   "sku": null
+  },
+  {
+   "code": "YG97",
+   "name": null,
+   "hex": "#909060",
+   "sku": null
+  },
+  {
+   "code": "YG99",
+   "name": null,
+   "hex": "#686840",
+   "sku": null
+  },
+  {
+   "code": "YR0000",
+   "name": null,
+   "hex": null,
+   "sku": null
+  },
+  {
+   "code": "YR000",
+   "name": null,
+   "hex": "#fef0e8",
+   "sku": null
+  },
+  {
+   "code": "YR00",
+   "name": null,
+   "hex": "#fde8d8",
+   "sku": null
+  },
+  {
+   "code": "YR01",
+   "name": null,
+   "hex": "#fdd8c0",
+   "sku": null
+  },
+  {
+   "code": "YR02",
+   "name": null,
+   "hex": "#fcc8a0",
+   "sku": null
+  },
+  {
+   "code": "YR04",
+   "name": null,
+   "hex": "#f8a860",
+   "sku": null
+  },
+  {
+   "code": "YR07",
+   "name": null,
+   "hex": "#f58028",
+   "sku": null
+  },
+  {
+   "code": "YR09",
+   "name": null,
+   "hex": "#f06010",
+   "sku": null
+  },
+  {
+   "code": "YR12",
+   "name": null,
+   "hex": "#f0a050",
+   "sku": null
+  },
+  {
+   "code": "YR14",
+   "name": null,
+   "hex": "#d88040",
+   "sku": null
+  },
+  {
+   "code": "YR15",
+   "name": null,
+   "hex": "#f09830",
+   "sku": null
+  },
+  {
+   "code": "YR16",
+   "name": null,
+   "hex": "#f0a848",
+   "sku": null
+  },
+  {
+   "code": "YR18",
+   "name": null,
+   "hex": "#e07028",
+   "sku": null
+  },
+  {
+   "code": "YR20",
+   "name": null,
+   "hex": "#fde8c0",
+   "sku": null
+  },
+  {
+   "code": "YR21",
+   "name": null,
+   "hex": "#fde0a8",
+   "sku": null
+  },
+  {
+   "code": "YR23",
+   "name": null,
+   "hex": "#e8c078",
+   "sku": null
+  },
+  {
+   "code": "YR24",
+   "name": null,
+   "hex": "#d8a858",
+   "sku": null
+  },
+  {
+   "code": "YR27",
+   "name": null,
+   "hex": "#d07030",
+   "sku": null
+  },
+  {
+   "code": "YR30",
+   "name": null,
+   "hex": "#f8e0c0",
+   "sku": null
+  },
+  {
+   "code": "YR31",
+   "name": null,
+   "hex": "#f8d0a0",
+   "sku": null
+  },
+  {
+   "code": "YR61",
+   "name": null,
+   "hex": "#f0c098",
+   "sku": null
+  },
+  {
+   "code": "YR65",
+   "name": null,
+   "hex": "#e09060",
+   "sku": null
+  },
+  {
+   "code": "YR68",
+   "name": null,
+   "hex": "#f07030",
+   "sku": null
+  },
+  {
+   "code": "YR82",
+   "name": null,
+   "hex": "#f8c8a8",
+   "sku": null
+  }
+ ]
+}

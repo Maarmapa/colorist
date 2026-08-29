@@ -1,0 +1,220 @@
+{
+ "card_id": "uni-posca-3m",
+ "brand": "Uni",
+ "line": "POSCA 3M",
+ "medium": "water-based-paint-marker",
+ "opacity": "opaque",
+ "substrates": [
+  "paper",
+  "canvas",
+  "wood",
+  "glass",
+  "plastic",
+  "fabric"
+ ],
+ "base_price_clp": 4500,
+ "url": "https://boykot.cl/colores/uni-posca-3m",
+ "tones_total": 33,
+ "tones_with_hex": 33,
+ "baked_at": "2026-08-29",
+ "tones": [
+  {
+   "code": "01",
+   "name": "Blanco",
+   "hex": "#ffffff",
+   "sku": "POSCA3M01"
+  },
+  {
+   "code": "02",
+   "name": "Amarillo",
+   "hex": "#ffd100",
+   "sku": "POSCA3M02"
+  },
+  {
+   "code": "03",
+   "name": "Amarillo vivo",
+   "hex": "#ff8f1c",
+   "sku": "POSCA3M03"
+  },
+  {
+   "code": "04",
+   "name": "Naranja",
+   "hex": "#ff5c39",
+   "sku": "POSCA3M04"
+  },
+  {
+   "code": "05",
+   "name": "Verde Claro",
+   "hex": "#80e0a7",
+   "sku": "POSCA3M05"
+  },
+  {
+   "code": "06",
+   "name": "Verde",
+   "hex": "#009a44",
+   "sku": "POSCA3M06"
+  },
+  {
+   "code": "07",
+   "name": "VerdeKaki",
+   "hex": "#095d32",
+   "sku": "POSCA3M07"
+  },
+  {
+   "code": "08",
+   "name": "Azul claro",
+   "hex": "#5bc2e7",
+   "sku": "POSCA3M08"
+  },
+  {
+   "code": "09",
+   "name": "Azul Marino",
+   "hex": "#002b49",
+   "sku": "POSCA3M09"
+  },
+  {
+   "code": "12",
+   "name": "Violeta",
+   "hex": "#8246af",
+   "sku": "POSCA3M12"
+  },
+  {
+   "code": "13",
+   "name": "Rosa",
+   "hex": "#f57eb6",
+   "sku": "POSCA3M13"
+  },
+  {
+   "code": "15",
+   "name": "Rojo",
+   "hex": "#e03e52",
+   "sku": "POSCA3M15"
+  },
+  {
+   "code": "21",
+   "name": "Marron",
+   "hex": "#c07d59",
+   "sku": "POSCA3M21"
+  },
+  {
+   "code": "22",
+   "name": "Marron oscuro",
+   "hex": "#572d2d",
+   "sku": "POSCA3M22"
+  },
+  {
+   "code": "24",
+   "name": "Negro",
+   "hex": "#2d2926",
+   "sku": "POSCA3M24"
+  },
+  {
+   "code": "25",
+   "name": "Oro",
+   "hex": "#ba9b37",
+   "sku": "POSCA3M25"
+  },
+  {
+   "code": "26",
+   "name": "Plata",
+   "hex": "#b9bbbb",
+   "sku": "POSCA3M26"
+  },
+  {
+   "code": "31",
+   "name": "Esmeralda",
+   "hex": "#169387",
+   "sku": "POSCA3M31"
+  },
+  {
+   "code": "33",
+   "name": "Azul",
+   "hex": "#0072ce",
+   "sku": "POSCA3M33"
+  },
+  {
+   "code": "34",
+   "name": "Lila",
+   "hex": "#7d55c7",
+   "sku": "POSCA3M34"
+  },
+  {
+   "code": "37",
+   "name": "Gris",
+   "hex": "#97999b",
+   "sku": "POSCA3M37"
+  },
+  {
+   "code": "42",
+   "name": "Bronce",
+   "hex": "#bb8459",
+   "sku": "POSCA3M42"
+  },
+  {
+   "code": "45",
+   "name": "Beige",
+   "hex": "#f5e1cc",
+   "sku": "POSCA3M45"
+  },
+  {
+   "code": "46",
+   "name": "Marfil",
+   "hex": "#f2eeca",
+   "sku": "POSCA3M46"
+  },
+  {
+   "code": "48",
+   "name": "Azul Cielo",
+   "hex": "#009cde",
+   "sku": "POSCA3M48"
+  },
+  {
+   "code": "51",
+   "name": "Rosa Claro",
+   "hex": "#eab8e4",
+   "sku": "POSCA3M51"
+  },
+  {
+   "code": "60",
+   "name": "Rojo Vino",
+   "hex": "#b46b7a",
+   "sku": "POSCA3M60"
+  },
+  {
+   "code": "61",
+   "name": "Gris Pizarra",
+   "hex": "#5b6770",
+   "sku": "POSCA3M61"
+  },
+  {
+   "code": "72",
+   "name": "Manzana",
+   "hex": "#78be21",
+   "sku": "POSCA3M72"
+  },
+  {
+   "code": "P11",
+   "name": "Lavanda",
+   "hex": "#c98bdb",
+   "sku": "POSCA3MP11"
+  },
+  {
+   "code": "P2",
+   "name": "Amarillo Sol",
+   "hex": "#fbf187",
+   "sku": "POSCA3MP2"
+  },
+  {
+   "code": "P4",
+   "name": "Albaricoque",
+   "hex": "#ffc56e",
+   "sku": "POSCA3MP4"
+  },
+  {
+   "code": "P6",
+   "name": "Verde Marino",
+   "hex": "#71dbd4",
+   "sku": "POSCA3MP6"
+  }
+ ]
+}

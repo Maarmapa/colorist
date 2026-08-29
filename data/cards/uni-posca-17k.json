@@ -1,0 +1,68 @@
+{
+ "card_id": "uni-posca-17k",
+ "brand": "Uni",
+ "line": "POSCA 17K",
+ "medium": "water-based-paint-marker",
+ "opacity": "opaque",
+ "substrates": [
+  "wall",
+  "canvas",
+  "wood",
+  "metal"
+ ],
+ "base_price_clp": 9500,
+ "url": "https://boykot.cl/colores/uni-posca-17k",
+ "tones_total": 8,
+ "tones_with_hex": 8,
+ "baked_at": "2026-08-29",
+ "tones": [
+  {
+   "code": "01",
+   "name": "Blanco",
+   "hex": "#ffffff",
+   "sku": "POSCA17K01"
+  },
+  {
+   "code": "02",
+   "name": "Amarillo",
+   "hex": "#ffd100",
+   "sku": "POSCA17K02"
+  },
+  {
+   "code": "13",
+   "name": "Rosa",
+   "hex": "#f57eb6",
+   "sku": "POSCA17K13"
+  },
+  {
+   "code": "15",
+   "name": "Rojo",
+   "hex": "#e03e52",
+   "sku": "POSCA17K15"
+  },
+  {
+   "code": "24",
+   "name": "Negro",
+   "hex": "#2d2926",
+   "sku": "POSCA17K24"
+  },
+  {
+   "code": "25",
+   "name": "Oro",
+   "hex": "#ba9b37",
+   "sku": "POSCA17K25"
+  },
+  {
+   "code": "26",
+   "name": "Plata",
+   "hex": "#b9bbbb",
+   "sku": "POSCA17K26"
+  },
+  {
+   "code": "33",
+   "name": "Azul",
+   "hex": "#0072ce",
+   "sku": "POSCA17K33"
+  }
+ ]
+}

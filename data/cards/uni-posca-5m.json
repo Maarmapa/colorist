@@ -1,0 +1,184 @@
+{
+ "card_id": "uni-posca-5m",
+ "brand": "Uni",
+ "line": "POSCA 5M",
+ "medium": "water-based-paint-marker",
+ "opacity": "opaque",
+ "substrates": [
+  "paper",
+  "canvas",
+  "wood",
+  "glass",
+  "plastic",
+  "fabric"
+ ],
+ "base_price_clp": 4600,
+ "url": "https://boykot.cl/colores/uni-posca-5m",
+ "tones_total": 27,
+ "tones_with_hex": 27,
+ "baked_at": "2026-08-29",
+ "tones": [
+  {
+   "code": "003",
+   "name": "Amarillo Vivo",
+   "hex": "#ff8f1c",
+   "sku": "POSCA5M03"
+  },
+  {
+   "code": "005",
+   "name": "Verde Claro",
+   "hex": "#80e0a7",
+   "sku": "POSCA5M05"
+  },
+  {
+   "code": "021",
+   "name": "Marron",
+   "hex": "#c07d59",
+   "sku": "POSCA5M21"
+  },
+  {
+   "code": "024",
+   "name": "Negro",
+   "hex": "#2d2926",
+   "sku": "POSCA5M24"
+  },
+  {
+   "code": "025",
+   "name": "Oro",
+   "hex": "#ba9b37",
+   "sku": "POSCA5M25"
+  },
+  {
+   "code": "026",
+   "name": "Plata",
+   "hex": "#b9bbbb",
+   "sku": "POSCA5M26"
+  },
+  {
+   "code": "033",
+   "name": "Azul",
+   "hex": "#0072ce",
+   "sku": "POSCA5M33"
+  },
+  {
+   "code": "042",
+   "name": "Bronce",
+   "hex": "#bb8459",
+   "sku": "POSCA5M42"
+  },
+  {
+   "code": "045",
+   "name": "Beige",
+   "hex": "#f5e1cc",
+   "sku": "POSCA5M45"
+  },
+  {
+   "code": "051",
+   "name": "Rosa Claro",
+   "hex": "#eab8e4",
+   "sku": "POSCA5M51"
+  },
+  {
+   "code": "054",
+   "name": "Naranjo Palido",
+   "hex": "#ffbe9f",
+   "sku": "POSCA5M54"
+  },
+  {
+   "code": "060",
+   "name": "Rojo Vino",
+   "hex": "#b46b7a",
+   "sku": "POSCA5M60"
+  },
+  {
+   "code": "061",
+   "name": "Gris Pizarra",
+   "hex": "#5b6770",
+   "sku": "POSCA5M61"
+  },
+  {
+   "code": "066",
+   "name": "Rosa Coral",
+   "hex": "#ff8da1",
+   "sku": "POSCA5M66"
+  },
+  {
+   "code": "073",
+   "name": "Amarillo Pajizo",
+   "hex": "#fbd872",
+   "sku": "POSCA5M73"
+  },
+  {
+   "code": "F13ROSAFLUOR",
+   "name": "F13 Rosa Fluor",
+   "hex": "#ff3eb5",
+   "sku": "POSCA5MF13"
+  },
+  {
+   "code": "F2AMARILLOFLUOR",
+   "name": "F2 Amarillo Fluor",
+   "hex": "#ffff2e",
+   "sku": "POSCA5MF2"
+  },
+  {
+   "code": "F4NARANJAFLUOR",
+   "name": "F4 Naranja Fluor",
+   "hex": "#ff7244",
+   "sku": "POSCA5MF4"
+  },
+  {
+   "code": "M12VIOLETAMETALICO",
+   "name": "M12 Violeta Metalico",
+   "hex": "#8246af",
+   "sku": "POSCA5MM12"
+  },
+  {
+   "code": "M13ROSAMETALICO",
+   "name": "M13 Rosa Metalico",
+   "hex": "#f57eb6",
+   "sku": "POSCA5MM13"
+  },
+  {
+   "code": "M15ROJOMETALICO",
+   "name": "M15 Rojo Metalico",
+   "hex": "#e03e52",
+   "sku": "POSCA5MM15"
+  },
+  {
+   "code": "M6VERDEMETALICO",
+   "name": "M6 Verde Metalico",
+   "hex": "#009a44",
+   "sku": "POSCA5MM6"
+  },
+  {
+   "code": "P11LAVANDA",
+   "name": "P11 Lavanda",
+   "hex": "#c98bdb",
+   "sku": "POSCA5MP11"
+  },
+  {
+   "code": "P2AMARILLOSOL",
+   "name": "P2 Amarillo Sol",
+   "hex": "#fbf187",
+   "sku": "POSCA5MP2"
+  },
+  {
+   "code": "P4ALBARICOQUE",
+   "name": "P4 Albaricoque",
+   "hex": "#ffc56e",
+   "sku": "POSCA5MP4"
+  },
+  {
+   "code": "P6VERDEMARINO",
+   "name": "P6 Verde Marino",
+   "hex": "#71dbd4",
+   "sku": "POSCA5MP6"
+  },
+  {
+   "code": "1",
+   "name": "Blanco",
+   "hex": "#ffffff",
+   "sku": "POSCA5M01"
+  }
+ ]
+}

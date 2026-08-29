@@ -1,0 +1,178 @@
+{
+ "card_id": "uni-posca-8k",
+ "brand": "Uni",
+ "line": "POSCA 8K",
+ "medium": "water-based-paint-marker",
+ "opacity": "opaque",
+ "substrates": [
+  "paper",
+  "canvas",
+  "wood",
+  "glass",
+  "plastic",
+  "fabric"
+ ],
+ "base_price_clp": 6000,
+ "url": "https://boykot.cl/colores/uni-posca-8k",
+ "tones_total": 26,
+ "tones_with_hex": 26,
+ "baked_at": "2026-08-29",
+ "tones": [
+  {
+   "code": "01",
+   "name": "Blanco",
+   "hex": "#ffffff",
+   "sku": "POSCA8K01"
+  },
+  {
+   "code": "02",
+   "name": "Amarillo",
+   "hex": "#ffd100",
+   "sku": "POSCA8K02"
+  },
+  {
+   "code": "03",
+   "name": "Amarillo Vivo",
+   "hex": "#ff8f1c",
+   "sku": "POSCA8K03"
+  },
+  {
+   "code": "06",
+   "name": "Verde",
+   "hex": "#009a44",
+   "sku": "POSCA8K06"
+  },
+  {
+   "code": "12",
+   "name": "Violeta",
+   "hex": "#8246af",
+   "sku": "POSCA8K12"
+  },
+  {
+   "code": "15",
+   "name": "Rojo",
+   "hex": "#e03e52",
+   "sku": "POSCA8K15"
+  },
+  {
+   "code": "24",
+   "name": "Negro",
+   "hex": "#2d2926",
+   "sku": "POSCA8K24"
+  },
+  {
+   "code": "25",
+   "name": "Oro",
+   "hex": "#ba9b37",
+   "sku": "POSCA8K25"
+  },
+  {
+   "code": "26",
+   "name": "Plata",
+   "hex": "#b9bbbb",
+   "sku": "POSCA8K26"
+  },
+  {
+   "code": "33",
+   "name": "Azul",
+   "hex": "#0072ce",
+   "sku": "POSCA8K33"
+  },
+  {
+   "code": "37",
+   "name": "Gris",
+   "hex": "#97999b",
+   "sku": "POSCA8K37"
+  },
+  {
+   "code": "45",
+   "name": "Beige",
+   "hex": "#f5e1cc",
+   "sku": "POSCA8K45"
+  },
+  {
+   "code": "46",
+   "name": "Marfil",
+   "hex": "#f2eeca",
+   "sku": "POSCA8K46"
+  },
+  {
+   "code": "54",
+   "name": "Naranja Palido",
+   "hex": "#ffbe9f",
+   "sku": "POSCA8K54"
+  },
+  {
+   "code": "60",
+   "name": "Rojo Vino",
+   "hex": "#b46b7a",
+   "sku": "POSCA8K60"
+  },
+  {
+   "code": "61",
+   "name": "Gris Pizarra",
+   "hex": "#5b6770",
+   "sku": "POSCA8K61"
+  },
+  {
+   "code": "71",
+   "name": "Turquesa",
+   "hex": "#009ace",
+   "sku": "POSCA8K71"
+  },
+  {
+   "code": "73",
+   "name": "Amarillo Pajizo",
+   "hex": "#fbd872",
+   "sku": "POSCA8K73"
+  },
+  {
+   "code": "F13",
+   "name": "Rosa Fluor",
+   "hex": "#ff3eb5",
+   "sku": "POSCA8KF13"
+  },
+  {
+   "code": "F15",
+   "name": "Rojo Fluor",
+   "hex": "#ff5256",
+   "sku": "POSCA8KF15"
+  },
+  {
+   "code": "F2",
+   "name": "Amarillo Fluor",
+   "hex": "#ffff2e",
+   "sku": "POSCA8KF2"
+  },
+  {
+   "code": "F4",
+   "name": "Naranja Fluor",
+   "hex": "#ff7244",
+   "sku": "POSCA8KF4"
+  },
+  {
+   "code": "F54",
+   "name": "Naranjo Claro Fluor",
+   "hex": "#ffff2e",
+   "sku": "POSCA8KF54"
+  },
+  {
+   "code": "F6",
+   "name": "Verde Fluor",
+   "hex": "#00bf6f",
+   "sku": "POSCA8KF6"
+  },
+  {
+   "code": "M13",
+   "name": "Rosa Metálico",
+   "hex": "#f57eb6",
+   "sku": "POSCA8KM13"
+  },
+  {
+   "code": "M15",
+   "name": "Rojo Metálico",
+   "hex": "#e03e52",
+   "sku": "POSCA8KM15"
+  }
+ ]
+}

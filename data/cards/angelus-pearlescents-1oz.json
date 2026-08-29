@@ -1,0 +1,61 @@
+{
+ "card_id": "angelus-pearlescents-1oz",
+ "brand": "Angelus",
+ "line": "Pearlescents 1oz",
+ "medium": "leather-acrylic",
+ "opacity": "opaque",
+ "substrates": [
+  "leather",
+  "canvas"
+ ],
+ "note": "pearlescent finish",
+ "base_price_clp": 6900,
+ "url": "https://boykot.cl/colores/angelus-pearlescents-1oz",
+ "tones_total": 7,
+ "tones_with_hex": 7,
+ "baked_at": "2026-08-29",
+ "tones": [
+  {
+   "code": "451",
+   "name": "Riot Red",
+   "hex": "#c83232",
+   "sku": "ANGE73301451"
+  },
+  {
+   "code": "452",
+   "name": "Pacific Blue",
+   "hex": "#2380c8",
+   "sku": "ANGE73301452"
+  },
+  {
+   "code": "453",
+   "name": "Prince Purple",
+   "hex": "#6a32a0",
+   "sku": "ANGE73301453"
+  },
+  {
+   "code": "454",
+   "name": "Sterling Silver",
+   "hex": "#c0c0c0",
+   "sku": "ANGE73301454"
+  },
+  {
+   "code": "455",
+   "name": "18K Gold",
+   "hex": "#d4af37",
+   "sku": "ANGE73301455"
+  },
+  {
+   "code": "456",
+   "name": "Rose Gold",
+   "hex": "#b76e79",
+   "sku": "ANGE73301456"
+  },
+  {
+   "code": "457",
+   "name": "Emerald Green",
+   "hex": "#2d8659",
+   "sku": "ANGE73301457"
+  }
+ ]
+}

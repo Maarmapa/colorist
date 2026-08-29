@@ -1,0 +1,1364 @@
+{
+ "card_id": "molotow-premium",
+ "brand": "Molotow",
+ "line": "Premium 400ml",
+ "medium": "solvent-spray",
+ "opacity": "opaque",
+ "substrates": [
+  "wall",
+  "metal",
+  "wood",
+  "canvas"
+ ],
+ "base_price_clp": 6000,
+ "url": "https://boykot.cl/colores/molotow-premium",
+ "tones_total": 224,
+ "tones_with_hex": 224,
+ "baked_at": "2026-08-29",
+ "tones": [
+  {
+   "code": "001",
+   "name": "jasmin yellow",
+   "hex": "#fdf4a6",
+   "sku": "P00327001"
+  },
+  {
+   "code": "002",
+   "name": "zinc yellow",
+   "hex": "#fedd3b",
+   "sku": "P00327006"
+  },
+  {
+   "code": "003",
+   "name": "cadmium yellow",
+   "hex": "#ffd900",
+   "sku": "P00327082"
+  },
+  {
+   "code": "004",
+   "name": "signal yellow",
+   "hex": "#ffcc00",
+   "sku": "P00327165"
+  },
+  {
+   "code": "005",
+   "name": "nature white",
+   "hex": "#faf4e3",
+   "sku": "P00327079"
+  },
+  {
+   "code": "006",
+   "name": "vanilla",
+   "hex": "#fff0b9",
+   "sku": "P00327115"
+  },
+  {
+   "code": "007",
+   "name": "cashmere yellow",
+   "hex": "#ffe26e",
+   "sku": "P00327002"
+  },
+  {
+   "code": "008",
+   "name": "quince",
+   "hex": "#ffd059",
+   "sku": "P00327003"
+  },
+  {
+   "code": "009",
+   "name": "golden yellow",
+   "hex": "#fbbc00",
+   "sku": "P00327083"
+  },
+  {
+   "code": "010",
+   "name": "melon yellow",
+   "hex": "#f7ad00",
+   "sku": "P00327007"
+  },
+  {
+   "code": "011",
+   "name": "SLIDER light orange",
+   "hex": "#f18d00",
+   "sku": "P00327084"
+  },
+  {
+   "code": "012",
+   "name": "pastel orange",
+   "hex": "#ed7920",
+   "sku": "P00327133"
+  },
+  {
+   "code": "013",
+   "name": "DARE orange light",
+   "hex": "#eb6816",
+   "sku": "P00327184"
+  },
+  {
+   "code": "014",
+   "name": "DARE orange",
+   "hex": "#e15c0f",
+   "sku": "P00327085"
+  },
+  {
+   "code": "015",
+   "name": "LINDA’s sunset",
+   "hex": "#df4f1a",
+   "sku": "P00327132"
+  },
+  {
+   "code": "016",
+   "name": "traffic red",
+   "hex": "#d4021e",
+   "sku": "P00327013"
+  },
+  {
+   "code": "017",
+   "name": "tornado red",
+   "hex": "#c2002d",
+   "sku": "P00327098"
+  },
+  {
+   "code": "018",
+   "name": "ruby red",
+   "hex": "#990c26",
+   "sku": "P00327166"
+  },
+  {
+   "code": "019",
+   "name": "burgundy",
+   "hex": "#71181f",
+   "sku": "P00327086"
+  },
+  {
+   "code": "020",
+   "name": "garnet",
+   "hex": "#4d171c",
+   "sku": "P00327185"
+  },
+  {
+   "code": "021",
+   "name": "GESER black red",
+   "hex": "#3e1715",
+   "sku": "P00327139"
+  },
+  {
+   "code": "022",
+   "name": "LOOMIT’s aubergine",
+   "hex": "#3a2119",
+   "sku": "P00327046"
+  },
+  {
+   "code": "023",
+   "name": "peach pastel",
+   "hex": "#facdb0",
+   "sku": "P00327186"
+  },
+  {
+   "code": "024",
+   "name": "peach light",
+   "hex": "#f8c1a0",
+   "sku": "P00327187"
+  },
+  {
+   "code": "025",
+   "name": "peach",
+   "hex": "#f6b288",
+   "sku": "P00327117"
+  },
+  {
+   "code": "026",
+   "name": "goldfish",
+   "hex": "#f08d4a",
+   "sku": "P00327008"
+  },
+  {
+   "code": "027",
+   "name": "lobster light",
+   "hex": "#ed7729",
+   "sku": "P00327171"
+  },
+  {
+   "code": "028",
+   "name": "lobster middle",
+   "hex": "#e95f24",
+   "sku": "P00327242"
+  },
+  {
+   "code": "029",
+   "name": "lobster",
+   "hex": "#e7502a",
+   "sku": "P00327010"
+  },
+  {
+   "code": "030",
+   "name": "vermillion",
+   "hex": "#be362a",
+   "sku": "P00327135"
+  },
+  {
+   "code": "031",
+   "name": "shock orange",
+   "hex": "#db4430",
+   "sku": "P00327088"
+  },
+  {
+   "code": "032",
+   "name": "MAD C cherry red",
+   "hex": "#d80028",
+   "sku": "P00327188"
+  },
+  {
+   "code": "033",
+   "name": "signal red",
+   "hex": "#c00417",
+   "sku": "P00327014"
+  },
+  {
+   "code": "034",
+   "name": "apricot",
+   "hex": "#f39a5a",
+   "sku": "P00327116"
+  },
+  {
+   "code": "035",
+   "name": "salmon orange",
+   "hex": "#db633a",
+   "sku": "P00327134"
+  },
+  {
+   "code": "036",
+   "name": "autumn leaf",
+   "hex": "#a53513",
+   "sku": "P00327011"
+  },
+  {
+   "code": "037",
+   "name": "LOOMIT’s apricot pastel",
+   "hex": "#f4beae",
+   "sku": "P00327189"
+  },
+  {
+   "code": "038",
+   "name": "LOOMIT’s apricot light",
+   "hex": "#f3a28b",
+   "sku": "P00327081"
+  },
+  {
+   "code": "039",
+   "name": "LOOMIT’s apricot middle",
+   "hex": "#ee826f",
+   "sku": "P00327190"
+  },
+  {
+   "code": "040",
+   "name": "LOOMIT’s apricot",
+   "hex": "#eb6a4a",
+   "sku": "P00327009"
+  },
+  {
+   "code": "041",
+   "name": "strawberry red",
+   "hex": "#d45646",
+   "sku": "P00327191"
+  },
+  {
+   "code": "042",
+   "name": "pussycat pink",
+   "hex": "#be4538",
+   "sku": "P00327087"
+  },
+  {
+   "code": "043",
+   "name": "raspberry red",
+   "hex": "#bb2037",
+   "sku": "P00327137"
+  },
+  {
+   "code": "044",
+   "name": "sangria",
+   "hex": "#9c052d",
+   "sku": "P00327106"
+  },
+  {
+   "code": "045",
+   "name": "grapefruit light",
+   "hex": "#f8cac2",
+   "sku": "P00327192"
+  },
+  {
+   "code": "046",
+   "name": "grapefruit",
+   "hex": "#f5b2a7",
+   "sku": "P00327122"
+  },
+  {
+   "code": "047",
+   "name": "mauve light",
+   "hex": "#e2a09a",
+   "sku": "P00327193"
+  },
+  {
+   "code": "048",
+   "name": "mauve",
+   "hex": "#cf908c",
+   "sku": "P00327109"
+  },
+  {
+   "code": "049",
+   "name": "antique pink middle",
+   "hex": "#a9736a",
+   "sku": "P00327194"
+  },
+  {
+   "code": "050",
+   "name": "antique pink",
+   "hex": "#996a63",
+   "sku": "P00327129"
+  },
+  {
+   "code": "051",
+   "name": "piglet pink light",
+   "hex": "#f7c6cd",
+   "sku": "P00327168"
+  },
+  {
+   "code": "052",
+   "name": "piglet pink",
+   "hex": "#f0a2b9",
+   "sku": "P00327012"
+  },
+  {
+   "code": "053",
+   "name": "candy",
+   "hex": "#dc7f9f",
+   "sku": "P00327195"
+  },
+  {
+   "code": "054",
+   "name": "lipstick",
+   "hex": "#b74d74",
+   "sku": "P00327196"
+  },
+  {
+   "code": "055",
+   "name": "purple",
+   "hex": "#74324a",
+   "sku": "P00327130"
+  },
+  {
+   "code": "056",
+   "name": "ESHER dirty red",
+   "hex": "#6c3640",
+   "sku": "P00327089"
+  },
+  {
+   "code": "057",
+   "name": "TILT bubble pink",
+   "hex": "#de95bc",
+   "sku": "P00327197"
+  },
+  {
+   "code": "058",
+   "name": "fuchsia pink",
+   "hex": "#d36aa2",
+   "sku": "P00327136"
+  },
+  {
+   "code": "059",
+   "name": "MAD C psycho pink",
+   "hex": "#d94476",
+   "sku": "P00327198"
+  },
+  {
+   "code": "060",
+   "name": "telemagenta",
+   "hex": "#b71d5a",
+   "sku": "P00327164"
+  },
+  {
+   "code": "061",
+   "name": "amaranth red",
+   "hex": "#910041",
+   "sku": "P00327099"
+  },
+  {
+   "code": "062",
+   "name": "MACrew purple",
+   "hex": "#68184b",
+   "sku": "P00327153"
+  },
+  {
+   "code": "063",
+   "name": "purple violet",
+   "hex": "#3e1f30",
+   "sku": "P00327138"
+  },
+  {
+   "code": "064",
+   "name": "crocus",
+   "hex": "#d7c7db",
+   "sku": "P00327199"
+  },
+  {
+   "code": "065",
+   "name": "lavender",
+   "hex": "#bca0c0",
+   "sku": "P00327200"
+  },
+  {
+   "code": "066",
+   "name": "lilac",
+   "hex": "#a77ea9",
+   "sku": "P00327201"
+  },
+  {
+   "code": "067",
+   "name": "grape",
+   "hex": "#856195",
+   "sku": "P00327202"
+  },
+  {
+   "code": "068",
+   "name": "blackberry",
+   "hex": "#673c7c",
+   "sku": "P00327203"
+  },
+  {
+   "code": "069",
+   "name": "currant",
+   "hex": "#4c2561",
+   "sku": "P00327042"
+  },
+  {
+   "code": "070",
+   "name": "crazy plum",
+   "hex": "#251241",
+   "sku": "P00327044"
+  },
+  {
+   "code": "071",
+   "name": "violet dark",
+   "hex": "#33265e",
+   "sku": "P00327043"
+  },
+  {
+   "code": "072",
+   "name": "black violet",
+   "hex": "#21194b",
+   "sku": "P00327045"
+  },
+  {
+   "code": "073",
+   "name": "thistle",
+   "hex": "#d9dad6",
+   "sku": "P00327036"
+  },
+  {
+   "code": "074",
+   "name": "viola pastel",
+   "hex": "#c7c4cf",
+   "sku": "P00327112"
+  },
+  {
+   "code": "075",
+   "name": "viola light",
+   "hex": "#a3a0c3",
+   "sku": "P00327111"
+  },
+  {
+   "code": "076",
+   "name": "viola middle",
+   "hex": "#7b7cab",
+   "sku": "P00327205"
+  },
+  {
+   "code": "077",
+   "name": "viola",
+   "hex": "#6167a2",
+   "sku": "P00327110"
+  },
+  {
+   "code": "078",
+   "name": "viola dark",
+   "hex": "#464e96",
+   "sku": "P00327206"
+  },
+  {
+   "code": "079",
+   "name": "night SEEN blue",
+   "hex": "#243b81",
+   "sku": "P00327041"
+  },
+  {
+   "code": "080",
+   "name": "grape middle",
+   "hex": "#505c8e",
+   "sku": "P00327039"
+  },
+  {
+   "code": "081",
+   "name": "grape dark",
+   "hex": "#3a4187",
+   "sku": "P00327040"
+  },
+  {
+   "code": "082",
+   "name": "purple velvet",
+   "hex": "#232a60",
+   "sku": "P00327141"
+  },
+  {
+   "code": "089",
+   "name": "azure blue light",
+   "hex": "#d1e6ee",
+   "sku": "P00327211"
+  },
+  {
+   "code": "090",
+   "name": "azure blue",
+   "hex": "#b9dcec",
+   "sku": "P00327212"
+  },
+  {
+   "code": "091",
+   "name": "shock blue pastel",
+   "hex": "#a1cee4",
+   "sku": "P00327163"
+  },
+  {
+   "code": "092",
+   "name": "shock blue light",
+   "hex": "#88bcd8",
+   "sku": "P00327162"
+  },
+  {
+   "code": "093",
+   "name": "shock blue middle",
+   "hex": "#59a8cd",
+   "sku": "P00327161"
+  },
+  {
+   "code": "094",
+   "name": "shock blue",
+   "hex": "#0082ba",
+   "sku": "P00327032"
+  },
+  {
+   "code": "095",
+   "name": "tulip blue light",
+   "hex": "#3683bd",
+   "sku": "P00327213"
+  },
+  {
+   "code": "096",
+   "name": "tulip blue middle",
+   "hex": "#0067a3",
+   "sku": "P00327214"
+  },
+  {
+   "code": "097",
+   "name": "tulip blue",
+   "hex": "#004a83",
+   "sku": "P00327033"
+  },
+  {
+   "code": "098",
+   "name": "SOTEN light blue",
+   "hex": "#008fb3",
+   "sku": "P00327031"
+  },
+  {
+   "code": "099",
+   "name": "ceramic pastel",
+   "hex": "#77a4c7",
+   "sku": "P00327029"
+  },
+  {
+   "code": "100",
+   "name": "jeans blue",
+   "hex": "#5088ae",
+   "sku": "P00327030"
+  },
+  {
+   "code": "101",
+   "name": "wild WANE blue",
+   "hex": "#315484",
+   "sku": "P00327154"
+  },
+  {
+   "code": "102",
+   "name": "navy blue",
+   "hex": "#1f3d79",
+   "sku": "P00327209"
+  },
+  {
+   "code": "103",
+   "name": "ultramarine blue",
+   "hex": "#002c5c",
+   "sku": "P00327024"
+  },
+  {
+   "code": "104",
+   "name": "sapphire blue",
+   "hex": "#002e59",
+   "sku": "P00327034"
+  },
+  {
+   "code": "105",
+   "name": "indigo",
+   "hex": "#002743",
+   "sku": "P00327210"
+  },
+  {
+   "code": "106",
+   "name": "ECB prussian blue dark",
+   "hex": "#00243b",
+   "sku": "P00327105"
+  },
+  {
+   "code": "107",
+   "name": "petrol",
+   "hex": "#0f3d50",
+   "sku": "P00327027"
+  },
+  {
+   "code": "108",
+   "name": "deep-sea blue",
+   "hex": "#1b394a",
+   "sku": "P00327028"
+  },
+  {
+   "code": "109",
+   "name": "deep-sea blue dark",
+   "hex": "#00233c",
+   "sku": "P00327104"
+  },
+  {
+   "code": "110",
+   "name": "ice-blue dark",
+   "hex": "#97ccd8",
+   "sku": "P00327019"
+  },
+  {
+   "code": "111",
+   "name": "dolphin blue",
+   "hex": "#468f9c",
+   "sku": "P00327022"
+  },
+  {
+   "code": "112",
+   "name": "petrol blue",
+   "hex": "#006a7d",
+   "sku": "P00327107"
+  },
+  {
+   "code": "113",
+   "name": "cream blue",
+   "hex": "#6bb8c4",
+   "sku": "P00327113"
+  },
+  {
+   "code": "114",
+   "name": "olympia blue",
+   "hex": "#489aa1",
+   "sku": "P00327021"
+  },
+  {
+   "code": "115",
+   "name": "aqua",
+   "hex": "#217f8b",
+   "sku": "P00327215"
+  },
+  {
+   "code": "116",
+   "name": "alga",
+   "hex": "#005362",
+   "sku": "P00327026"
+  },
+  {
+   "code": "117",
+   "name": "baby blue",
+   "hex": "#b6dcd2",
+   "sku": "P00327016"
+  },
+  {
+   "code": "119",
+   "name": "blue gin",
+   "hex": "#54a79c",
+   "sku": "P00327108"
+  },
+  {
+   "code": "120",
+   "name": "verdigris",
+   "hex": "#67b1b8",
+   "sku": "P00327023"
+  },
+  {
+   "code": "121",
+   "name": "caribbean",
+   "hex": "#d0e8dd",
+   "sku": "P00327114"
+  },
+  {
+   "code": "122",
+   "name": "riviera pastel",
+   "hex": "#a8d5c4",
+   "sku": "P00327216"
+  },
+  {
+   "code": "123",
+   "name": "riviera light",
+   "hex": "#80c2ae",
+   "sku": "P00327072"
+  },
+  {
+   "code": "124",
+   "name": "TASTE riviera middle",
+   "hex": "#44b39b",
+   "sku": "P00327217"
+  },
+  {
+   "code": "125",
+   "name": "riviera dark",
+   "hex": "#00998a",
+   "sku": "P00327073"
+  },
+  {
+   "code": "126",
+   "name": "lagoon blue",
+   "hex": "#00857c",
+   "sku": "P00327074"
+  },
+  {
+   "code": "127",
+   "name": "MARTHA marine",
+   "hex": "#00605b",
+   "sku": "P00327155"
+  },
+  {
+   "code": "128",
+   "name": "turquoise dark",
+   "hex": "#00454d",
+   "sku": "P00327156"
+  },
+  {
+   "code": "129",
+   "name": "nori",
+   "hex": "#003c43",
+   "sku": "P00327218"
+  },
+  {
+   "code": "130",
+   "name": "black turquoise",
+   "hex": "#00333d",
+   "sku": "P00327090"
+  },
+  {
+   "code": "131",
+   "name": "gale green",
+   "hex": "#aab98f",
+   "sku": "P00327053"
+  },
+  {
+   "code": "132",
+   "name": "reed",
+   "hex": "#8fb18d",
+   "sku": "P00327240"
+  },
+  {
+   "code": "133",
+   "name": "aquamarine",
+   "hex": "#77a479",
+   "sku": "P00327054"
+  },
+  {
+   "code": "134",
+   "name": "swamp",
+   "hex": "#4d7057",
+   "sku": "P00327241"
+  },
+  {
+   "code": "135",
+   "name": "black forest green",
+   "hex": "#3d5b46",
+   "sku": "P00327055"
+  },
+  {
+   "code": "137",
+   "name": "calypso light",
+   "hex": "#c2deba",
+   "sku": "P00327068"
+  },
+  {
+   "code": "138",
+   "name": "calypso middle",
+   "hex": "#74bd8b",
+   "sku": "P00327069"
+  },
+  {
+   "code": "139",
+   "name": "calypso dark",
+   "hex": "#53a977",
+   "sku": "P00327070"
+  },
+  {
+   "code": "140",
+   "name": "turquoise green",
+   "hex": "#00794d",
+   "sku": "P00327219"
+  },
+  {
+   "code": "141",
+   "name": "turquoise green middle",
+   "hex": "#005a3c",
+   "sku": "P00327172"
+  },
+  {
+   "code": "142",
+   "name": "turquoise green dark",
+   "hex": "#004932",
+   "sku": "P00327220"
+  },
+  {
+   "code": "143",
+   "name": "future green",
+   "hex": "#004230",
+   "sku": "P00327145"
+  },
+  {
+   "code": "144",
+   "name": "menthol light",
+   "hex": "#b8d69d",
+   "sku": "P00327124"
+  },
+  {
+   "code": "145",
+   "name": "menthol",
+   "hex": "#6bb66c",
+   "sku": "P00327123"
+  },
+  {
+   "code": "146",
+   "name": "universe green",
+   "hex": "#009952",
+   "sku": "P00327221"
+  },
+  {
+   "code": "147",
+   "name": "lettuce green",
+   "hex": "#00873f",
+   "sku": "P00327131"
+  },
+  {
+   "code": "148",
+   "name": "kiwi pastel",
+   "hex": "#dfe38c",
+   "sku": "P00327120"
+  },
+  {
+   "code": "149",
+   "name": "kiwi light",
+   "hex": "#bbce3c",
+   "sku": "P00327119"
+  },
+  {
+   "code": "150",
+   "name": "kiwi",
+   "hex": "#96b922",
+   "sku": "P00327118"
+  },
+  {
+   "code": "152",
+   "name": "brilliant green",
+   "hex": "#b2cc54",
+   "sku": "P00327061"
+  },
+  {
+   "code": "153",
+   "name": "grasshopper",
+   "hex": "#88bb3c",
+   "sku": "P00327064"
+  },
+  {
+   "code": "154",
+   "name": "cream green",
+   "hex": "#a6c85c",
+   "sku": "P00327058"
+  },
+  {
+   "code": "155",
+   "name": "hippie green",
+   "hex": "#9ec874",
+   "sku": "P00327063"
+  },
+  {
+   "code": "156",
+   "name": "BACON wasabi",
+   "hex": "#7fb94f",
+   "sku": "P00327222"
+  },
+  {
+   "code": "157",
+   "name": "cliff green",
+   "hex": "#57ab27",
+   "sku": "P00327065"
+  },
+  {
+   "code": "158",
+   "name": "clover green",
+   "hex": "#2da43f",
+   "sku": "P00327223"
+  },
+  {
+   "code": "159",
+   "name": "juice green",
+   "hex": "#008834",
+   "sku": "P00327066"
+  },
+  {
+   "code": "160",
+   "name": "mr. green",
+   "hex": "#00763b",
+   "sku": "P00327096"
+  },
+  {
+   "code": "161",
+   "name": "leaf green",
+   "hex": "#1f5a2e",
+   "sku": "P00327143"
+  },
+  {
+   "code": "162",
+   "name": "MIGHTY green",
+   "hex": "#94bf3d",
+   "sku": "P00327062"
+  },
+  {
+   "code": "163",
+   "name": "avocado",
+   "hex": "#6a9619",
+   "sku": "P00327224"
+  },
+  {
+   "code": "164",
+   "name": "fern green",
+   "hex": "#567513",
+   "sku": "P00327142"
+  },
+  {
+   "code": "165",
+   "name": "moss green",
+   "hex": "#325815",
+   "sku": "P00327225"
+  },
+  {
+   "code": "166",
+   "name": "chromium oxide green",
+   "hex": "#2c4025",
+   "sku": "P00327144"
+  },
+  {
+   "code": "167",
+   "name": "black green",
+   "hex": "#002c1c",
+   "sku": "P00327095"
+  },
+  {
+   "code": "168",
+   "name": "butterfly green",
+   "hex": "#dae07f",
+   "sku": "P00327056"
+  },
+  {
+   "code": "169",
+   "name": "green tea",
+   "hex": "#bac579",
+   "sku": "P00327226"
+  },
+  {
+   "code": "170",
+   "name": "P.JAY green",
+   "hex": "#949955",
+   "sku": "P00327051"
+  },
+  {
+   "code": "171",
+   "name": "amazonas",
+   "hex": "#908f5e",
+   "sku": "P00327052"
+  },
+  {
+   "code": "172",
+   "name": "camouflage",
+   "hex": "#5e5d33",
+   "sku": "P00327227"
+  },
+  {
+   "code": "173",
+   "name": "evil olive",
+   "hex": "#414423",
+   "sku": "P00327146"
+  },
+  {
+   "code": "174",
+   "name": "poison green",
+   "hex": "#dede2e",
+   "sku": "P00327059"
+  },
+  {
+   "code": "175",
+   "name": "apple",
+   "hex": "#ccc545",
+   "sku": "P00327128"
+  },
+  {
+   "code": "177",
+   "name": "soft pastel",
+   "hex": "#e5e18c",
+   "sku": "P00327048"
+  },
+  {
+   "code": "179",
+   "name": "hemp",
+   "hex": "#b4a338",
+   "sku": "P00327050"
+  },
+  {
+   "code": "180",
+   "name": "green bean",
+   "hex": "#98961e",
+   "sku": "P00327229"
+  },
+  {
+   "code": "181",
+   "name": "pear",
+   "hex": "#828423",
+   "sku": "P00327251"
+  },
+  {
+   "code": "182",
+   "name": "mustard",
+   "hex": "#d3ba58",
+   "sku": "P00327262"
+  },
+  {
+   "code": "183",
+   "name": "khaki",
+   "hex": "#ac8c34",
+   "sku": "P00327078"
+  },
+  {
+   "code": "184",
+   "name": "ivory light",
+   "hex": "#fdeac5",
+   "sku": "P00327244"
+  },
+  {
+   "code": "185",
+   "name": "milk coffee",
+   "hex": "#d5b172",
+   "sku": "P00327075"
+  },
+  {
+   "code": "186",
+   "name": "cappuccino",
+   "hex": "#a47a4e",
+   "sku": "P00327235"
+  },
+  {
+   "code": "187",
+   "name": "espresso",
+   "hex": "#86653d",
+   "sku": "P00327094"
+  },
+  {
+   "code": "188",
+   "name": "mocca",
+   "hex": "#533e27",
+   "sku": "P00327173"
+  },
+  {
+   "code": "189",
+   "name": "sahara beige light",
+   "hex": "#f6deb2",
+   "sku": "P00327230"
+  },
+  {
+   "code": "190",
+   "name": "sahara beige middle",
+   "hex": "#f1cb83",
+   "sku": "P00327231"
+  },
+  {
+   "code": "191",
+   "name": "sahara beige",
+   "hex": "#f0be6e",
+   "sku": "P00327005"
+  },
+  {
+   "code": "192",
+   "name": "papyrus",
+   "hex": "#c2964a",
+   "sku": "P00327232"
+  },
+  {
+   "code": "193",
+   "name": "nougat",
+   "hex": "#b87b3f",
+   "sku": "P00327077"
+  },
+  {
+   "code": "194",
+   "name": "beige brown",
+   "hex": "#834e2d",
+   "sku": "P00327151"
+  },
+  {
+   "code": "195",
+   "name": "apricot beige",
+   "hex": "#facf9b",
+   "sku": "P00327004"
+  },
+  {
+   "code": "196",
+   "name": "labrador",
+   "hex": "#edbf8b",
+   "sku": "P00327233"
+  },
+  {
+   "code": "197",
+   "name": "camel",
+   "hex": "#dc9b55",
+   "sku": "P00327170"
+  },
+  {
+   "code": "198",
+   "name": "ocher brown",
+   "hex": "#ac6f2e",
+   "sku": "P00327150"
+  },
+  {
+   "code": "199",
+   "name": "orange brown light",
+   "hex": "#f49e4e",
+   "sku": "P00327181"
+  },
+  {
+   "code": "200",
+   "name": "orange brown middle",
+   "hex": "#d7722e",
+   "sku": "P00327182"
+  },
+  {
+   "code": "201",
+   "name": "orange brown",
+   "hex": "#b4591d",
+   "sku": "P00327076"
+  },
+  {
+   "code": "202",
+   "name": "cocoa light",
+   "hex": "#9f5348",
+   "sku": "P00327169"
+  },
+  {
+   "code": "203",
+   "name": "cocoa middle",
+   "hex": "#88463d",
+   "sku": "P00327234"
+  },
+  {
+   "code": "204",
+   "name": "cocoa",
+   "hex": "#783a2f",
+   "sku": "P00327126"
+  },
+  {
+   "code": "205",
+   "name": "caramel",
+   "hex": "#a76745",
+   "sku": "P00327091"
+  },
+  {
+   "code": "206",
+   "name": "walnut",
+   "hex": "#75462a",
+   "sku": "P00327183"
+  },
+  {
+   "code": "207",
+   "name": "hazelnut",
+   "hex": "#5e3121",
+   "sku": "P00327092"
+  },
+  {
+   "code": "208",
+   "name": "chocolate brown",
+   "hex": "#4b301e",
+   "sku": "P00327152"
+  },
+  {
+   "code": "209",
+   "name": "CMP dark brown",
+   "hex": "#3f271b",
+   "sku": "P00327093"
+  },
+  {
+   "code": "210",
+   "name": "tar black",
+   "hex": "#3c3b36",
+   "sku": "P00327159"
+  },
+  {
+   "code": "211",
+   "name": "stone grey dark",
+   "hex": "#5d5947",
+   "sku": "P00327176"
+  },
+  {
+   "code": "212",
+   "name": "stone grey middle",
+   "hex": "#848169",
+   "sku": "P00327175"
+  },
+  {
+   "code": "213",
+   "name": "stone grey light",
+   "hex": "#c4c1ab",
+   "sku": "P00327174"
+  },
+  {
+   "code": "214",
+   "name": "TOAST signal black",
+   "hex": "#061722",
+   "sku": "P00327180"
+  },
+  {
+   "code": "215",
+   "name": "black grey neutral",
+   "hex": "#41403e",
+   "sku": "P00327103"
+  },
+  {
+   "code": "216",
+   "name": "dark grey neutral",
+   "hex": "#5f5f5c",
+   "sku": "P00327102"
+  },
+  {
+   "code": "217",
+   "name": "CAPARSO middle grey neutral",
+   "hex": "#989892",
+   "sku": "P00327101"
+  },
+  {
+   "code": "218",
+   "name": "light grey neutral",
+   "hex": "#d8d7cc",
+   "sku": "P00327100"
+  },
+  {
+   "code": "219",
+   "name": "mouse grey",
+   "hex": "#707574",
+   "sku": "P00327147"
+  },
+  {
+   "code": "221",
+   "name": "deep black",
+   "hex": "#040608",
+   "sku": "P00327080"
+  },
+  {
+   "code": "222",
+   "name": "black grey dark",
+   "hex": "#303330",
+   "sku": "P00327149"
+  },
+  {
+   "code": "223",
+   "name": "anthracite grey",
+   "hex": "#3c4144",
+   "sku": "P00327148"
+  },
+  {
+   "code": "224",
+   "name": "grey blue dark",
+   "hex": "#6e7172",
+   "sku": "P00327179"
+  },
+  {
+   "code": "225",
+   "name": "granite",
+   "hex": "#848788",
+   "sku": "P00327236"
+  },
+  {
+   "code": "226",
+   "name": "grey blue middle",
+   "hex": "#9c9e9e",
+   "sku": "P00327178"
+  },
+  {
+   "code": "227",
+   "name": "rock grey",
+   "hex": "#adaeac",
+   "sku": "P00327237"
+  },
+  {
+   "code": "228",
+   "name": "grey blue light",
+   "hex": "#bdbcbb",
+   "sku": "P00327177"
+  },
+  {
+   "code": "229",
+   "name": "pebble grey",
+   "hex": "#cdcbca",
+   "sku": "P00327238"
+  },
+  {
+   "code": "230",
+   "name": "marble",
+   "hex": "#dad8d8",
+   "sku": "P00327239"
+  },
+  {
+   "code": "231",
+   "name": "signal white",
+   "hex": "#ffffff",
+   "sku": "P00327160"
+  },
+  {
+   "code": "232",
+   "name": "neon yellow",
+   "hex": "#fae500",
+   "sku": null
+  },
+  {
+   "code": "233",
+   "name": "neon orange",
+   "hex": "#ff7300",
+   "sku": null
+  },
+  {
+   "code": "234",
+   "name": "neon pink",
+   "hex": "#ff0073",
+   "sku": null
+  },
+  {
+   "code": "235",
+   "name": "neon blue",
+   "hex": "#0073ff",
+   "sku": null
+  },
+  {
+   "code": "236",
+   "name": "neon green",
+   "hex": "#51da3f",
+   "sku": null
+  }
+ ]
+}

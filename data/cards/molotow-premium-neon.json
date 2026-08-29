@@ -1,0 +1,69 @@
+{
+ "card_id": "molotow-premium-neon",
+ "brand": "Molotow",
+ "line": "Premium Neon",
+ "medium": "solvent-spray",
+ "opacity": "opaque",
+ "substrates": [
+  "wall",
+  "metal",
+  "wood",
+  "canvas"
+ ],
+ "note": "fluorescent pigment",
+ "base_price_clp": 6000,
+ "url": "https://boykot.cl/colores/molotow-premium-neon",
+ "tones_total": 8,
+ "tones_with_hex": 8,
+ "baked_at": "2026-08-29",
+ "tones": [
+  {
+   "code": "232",
+   "name": "Yellow Neon",
+   "hex": "#dfff00",
+   "sku": "4015962729063"
+  },
+  {
+   "code": "233",
+   "name": "Orange Neon",
+   "hex": "#ff6700",
+   "sku": "4015962729070"
+  },
+  {
+   "code": "234",
+   "name": "Pink Neon",
+   "hex": "#ff1493",
+   "sku": "4015962729087"
+  },
+  {
+   "code": "234-1",
+   "name": "Violet Neon",
+   "hex": "#bf00ff",
+   "sku": "4015962729339"
+  },
+  {
+   "code": "235",
+   "name": "Blue Neon",
+   "hex": "#1f51ff",
+   "sku": "4015962729094"
+  },
+  {
+   "code": "235-1",
+   "name": "Turquoise Neon",
+   "hex": "#00ffff",
+   "sku": "4015962729346"
+  },
+  {
+   "code": "236",
+   "name": "Green Neon",
+   "hex": "#39ff14",
+   "sku": "4015962729100"
+  },
+  {
+   "code": "236-1",
+   "name": "Red Antistatik Neon",
+   "hex": "#ff073a",
+   "sku": "4015962729155"
+  }
+ ]
+}

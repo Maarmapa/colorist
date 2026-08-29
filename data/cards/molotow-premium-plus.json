@@ -1,0 +1,92 @@
+{
+ "card_id": "molotow-premium-plus",
+ "brand": "Molotow",
+ "line": "Premium Plus",
+ "medium": "solvent-spray",
+ "opacity": "opaque",
+ "substrates": [
+  "wall",
+  "metal",
+  "wood",
+  "canvas"
+ ],
+ "base_price_clp": 7900,
+ "url": "https://boykot.cl/colores/molotow-premium-plus",
+ "tones_total": 12,
+ "tones_with_hex": 12,
+ "baked_at": "2026-08-29",
+ "tones": [
+  {
+   "code": "601",
+   "name": "Quince",
+   "hex": "#bcda00",
+   "sku": "4015962336889"
+  },
+  {
+   "code": "602",
+   "name": "Lobster",
+   "hex": "#ff4040",
+   "sku": "4015962336896"
+  },
+  {
+   "code": "603",
+   "name": "Traffic Red",
+   "hex": "#cc0000",
+   "sku": "4015962336902"
+  },
+  {
+   "code": "604",
+   "name": "Burgundy",
+   "hex": "#800020",
+   "sku": "4015962336919"
+  },
+  {
+   "code": "605",
+   "name": "Crazy Plum",
+   "hex": "#6b2d5c",
+   "sku": "4015962336926"
+  },
+  {
+   "code": "606",
+   "name": "Pastel Ceramic",
+   "hex": "#e8dccc",
+   "sku": "4015962336933"
+  },
+  {
+   "code": "607",
+   "name": "Ultramarine Blue",
+   "hex": "#120a8f",
+   "sku": "4015962336940"
+  },
+  {
+   "code": "608",
+   "name": "Lagoon Blue",
+   "hex": "#00a8b5",
+   "sku": "4015962336957"
+  },
+  {
+   "code": "609",
+   "name": "Juice Green",
+   "hex": "#4fe042",
+   "sku": "4015962336964"
+  },
+  {
+   "code": "610",
+   "name": "Signal White",
+   "hex": "#ffffff",
+   "sku": "4015962336971"
+  },
+  {
+   "code": "611",
+   "name": "Deep Black",
+   "hex": "#0a0a0a",
+   "sku": "4015962336988"
+  },
+  {
+   "code": "612",
+   "name": "Chrome",
+   "hex": "#c0c0c0",
+   "sku": "4015962336995"
+  }
+ ]
+}
