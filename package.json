@@ -1,0 +1,18 @@
+{
+  "name": "colorist",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A workbench where the agent's tool list is a consequence of what you already own.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "bake": "node scripts/bake-cards.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5"
+  }
+}

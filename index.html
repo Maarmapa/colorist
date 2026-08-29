@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colorist — the tools change when your drawer does</title>
+<meta name="description" content="A colour workbench where the agent's tool list is a consequence of what you already own. Real inventory from a real art supply store in Santiago, Chile.">
+<style>
+  :root {
+    --bg: #0e0f12; --panel: #16181d; --line: #262a32;
+    --ink: #e8eaee; --dim: #9aa2b1; --accent: #d4f000; --off: #ff5c5c;
+    --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+    display: grid; grid-template-columns: 1fr 340px; min-height: 100vh;
+  }
+  @media (max-width: 900px) { body { grid-template-columns: 1fr; } }
+
+  main { padding: 20px 24px; min-width: 0; }
+  header h1 { font-size: 20px; margin: 0 0 2px; letter-spacing: -0.01em; }
+  header p { margin: 0 0 18px; color: var(--dim); font-size: 13px; max-width: 62ch; }
+
+  .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 14px; }
+  button {
+    background: var(--panel); color: var(--ink); border: 1px solid var(--line);
+    border-radius: 7px; padding: 7px 12px; font-size: 13px; cursor: pointer;
+  }
+  button:hover { border-color: var(--accent); }
+  button.primary { background: var(--accent); color: #101820; border-color: var(--accent); font-weight: 600; }
+
+  #targets { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; min-height: 30px; }
+  .target {
+    width: 74px; height: 44px; border-radius: 6px; display: grid; place-items: center;
+    font: 10px/1 var(--mono); border: 1px solid rgba(255,255,255,.14);
+  }
+  .hint { color: var(--dim); font-size: 13px; margin: 4px 0; }
+
+  .card { margin-bottom: 18px; }
+  .card h3 { font-size: 13px; margin: 0 0 7px; font-weight: 600; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+  .card h3 small { color: var(--dim); font-weight: 400; font-size: 11px; }
+  .swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(46px, 1fr)); gap: 3px; }
+  .sw {
+    aspect-ratio: 1; border-radius: 4px; display: grid; place-items: center;
+    font: 9px/1 var(--mono); overflow: hidden; text-align: center;
+    border: 1px solid transparent;
+  }
+  .sw.owned { outline: 2px solid var(--accent); outline-offset: -2px; }
+  .sw.picked { box-shadow: 0 0 0 2px #fff, 0 0 14px var(--accent); }
+  /* Un tono sin valor de color se dibuja con trama y se declara. Nunca se rellena. */
+  .sw.unmapped {
+    background: repeating-linear-gradient(45deg, #23262d, #23262d 4px, #1a1d23 4px, #1a1d23 8px);
+    color: var(--dim); border-color: var(--line);
+  }
+
+  aside {
+    background: var(--panel); border-left: 1px solid var(--line);
+    padding: 20px 18px; position: sticky; top: 0; height: 100vh; overflow: auto;
+  }
+  aside h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: var(--dim); margin: 0 0 10px; }
+  .toollist { list-style: none; margin: 0 0 20px; padding: 0; }
+  .toollist li { padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+  .toollist code { font-family: var(--mono); font-size: 12px; }
+  .toollist li.on code::before { content: "● "; color: var(--accent); }
+  .toollist li.off { opacity: .85; }
+  .toollist li.off code { color: var(--off); text-decoration: line-through; }
+  .toollist li.off code::before { content: "○ "; color: var(--off); text-decoration: none; }
+  .toollist li.off em { display: block; color: var(--dim); font-size: 11px; font-style: normal; margin-top: 3px; }
+  .stat { font: 12px/1.6 var(--mono); color: var(--dim); }
+  .stat b { color: var(--ink); }
+  .stat.live b, .stat.live { color: var(--accent); }
+  .stat.snapshot { color: #ffb454; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Colorist</h1>
+    <p>
+      The agent can reason about colour but has never seen one. This page can paint
+      <b>1,625 real tones</b> from a working art supply store in Santiago, Chile — but cannot reason.
+      What it also has, and no server does, is <b>your drawer</b>: the markers you already own.
+      When that covers what you want to paint, the tool that sells you things stops existing.
+    </p>
+  </header>
+
+  <div class="row">
+    <button class="primary" id="btn-demo">Load a sample drawer</button>
+    <button id="btn-palette">Set a sample palette</button>
+    <button id="btn-clear">Empty the drawer</button>
+    <span class="stat">in your drawer: <b id="drawer-count">0</b></span>
+    <span class="stat" id="stock-banner">checking stock…</span>
+  </div>
+
+  <div id="targets"></div>
+  <div id="grid"></div>
+</main>
+
+<aside>
+  <h2>What the agent can do right now</h2>
+  <div id="tools"><p class="hint">Loading…</p></div>
+
+  <h2>Why this needs WebMCP</h2>
+  <p class="stat">
+    Your drawer lives in this tab and is never uploaded — check the network panel.
+    A remote server can answer badly from a cart tool. It cannot <b>not have</b> one,
+    because it does not know what you own.
+  </p>
+</aside>
+
+<script type="module" src="/src/main.ts"></script>
+<script type="module">
+  // Los botones son atajos para la demo; todo esto también lo puede hacer el agente.
+  const paleta = ['#8a4b2a', '#f5e3da', '#3a8dc7', '#1d3557', '#2a9d8f'];
+  document.getElementById('btn-demo')?.addEventListener('click', async () => {
+    const { colorist } = window;
+    const mc = document.modelContext ?? navigator.modelContext;
+    // Se llama la MISMA tool que llamaría el agente, no una ruta paralela.
+    if (mc && navigator.modelContextTesting) await navigator.modelContextTesting.executeTool('load_demo_drawer', '{}');
+    else window.dispatchEvent(new Event('colorist:demo'));
+  });
+  document.getElementById('btn-palette')?.addEventListener('click', () => window.colorist?.setTargets(paleta));
+  document.getElementById('btn-clear')?.addEventListener('click', () => window.colorist?.clearDrawer());
+</script>
+</body>
+</html>

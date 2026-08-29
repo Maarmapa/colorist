@@ -29,9 +29,9 @@ const D65 = { X: 95.047, Y: 100.0, Z: 108.883 };
 export function parseHex(hex: string): RGB | null {
   if (typeof hex !== 'string') return null;
   const m = /^#?([0-9a-f]{3}|[0-9a-f]{6})$/i.exec(hex.trim());
-  if (!m) return null;
-  let h = m[1];
-  if (h.length === 3) h = h[0] + h[0] + h[1] + h[1] + h[2] + h[2];
+  const crudo = m?.[1];
+  if (!crudo) return null;
+  const h = crudo.length === 3 ? crudo.replace(/./g, (c) => c + c) : crudo;
   return {
     r: parseInt(h.slice(0, 2), 16),
     g: parseInt(h.slice(2, 4), 16),
