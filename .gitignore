@@ -40,6 +40,8 @@
 !relay/**
 !scripts/
 !scripts/**
+!api/
+!api/**
 
 # 3. Y aun dentro de lo permitido, estos NUNCA — por si alguno cae ahí adentro.
 #    Las reglas de abajo ganan porque van al final.
