@@ -436,7 +436,17 @@ async function arrancar() {
   if (mc) {
     superficieActual = mc;
     const control = new AbortController();
-    await Promise.all(TOOLS_SIEMPRE.map((t) => mc.registerTool(t, { signal: control.signal }).catch(() => {})));
+
+    // allSettled con carrera contra un reloj, y no Promise.all a secas.
+    // Visto en produccion: alguna de las promesas de registerTool del polyfill
+    // no resuelve nunca, y un `await` colgado ahi deja la pagina entera muda —
+    // las tools quedaban registradas y el panel seguia diciendo "Loading...".
+    // Pintar la interfaz no puede depender de que un tercero cumpla su promesa.
+    const registros = Promise.allSettled(
+      TOOLS_SIEMPRE.map((t) => mc.registerTool(t, { signal: control.signal })),
+    );
+    await Promise.race([registros, new Promise((r) => setTimeout(r, 1500))]);
+
     onDrawerChange(() => repintar());
     await sincronizarSuperficie(mc);
   } else {
